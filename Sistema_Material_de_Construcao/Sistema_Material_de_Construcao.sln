@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_Material_de_Construcao", "Sistema_Material_de_Construcao\Sistema_Material_de_Construcao.csproj", "{7DC2D8C5-B5BA-469F-ABBF-20ACAE2960B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegraNegocio", "RegraNegocio\RegraNegocio.csproj", "{E781451F-7906-4C36-BC12-0057C47F9FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcessoDados", "AcessoDados\AcessoDados.csproj", "{A5357276-200A-4E75-94D6-7BF7B7EE6292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7DC2D8C5-B5BA-469F-ABBF-20ACAE2960B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DC2D8C5-B5BA-469F-ABBF-20ACAE2960B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DC2D8C5-B5BA-469F-ABBF-20ACAE2960B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E781451F-7906-4C36-BC12-0057C47F9FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E781451F-7906-4C36-BC12-0057C47F9FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E781451F-7906-4C36-BC12-0057C47F9FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E781451F-7906-4C36-BC12-0057C47F9FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5357276-200A-4E75-94D6-7BF7B7EE6292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5357276-200A-4E75-94D6-7BF7B7EE6292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5357276-200A-4E75-94D6-7BF7B7EE6292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5357276-200A-4E75-94D6-7BF7B7EE6292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
