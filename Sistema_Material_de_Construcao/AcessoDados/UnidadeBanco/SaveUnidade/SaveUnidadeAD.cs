@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcessoDados.ProdutosBanco.SaveCategoria
+namespace AcessoDados.UnidadeBanco.SaveUnidade
 {
-	public class SaveCategoriaAD
+	public class SaveUnidadeAD
 	{
 		SqlCommand comandoSql = new SqlCommand();
 		StringBuilder sql = new StringBuilder();
 
-		public void SalvarCategoria(string nome, string descricao)
+		public void SalvarUnidade(string nome, string descricao)
 		{
 			try
 			{
@@ -21,7 +21,7 @@ namespace AcessoDados.ProdutosBanco.SaveCategoria
 				{
 					conexao.Open();
 
-					sql.Append("INSERT INTO Categoria_Produtos (Nome_Categoria_Produtos, Descricao_Categoria_Produtos) ");
+					sql.Append("INSERT INTO Unidade_Produtos (Nome_Unidade_Produtos, Descricao_Unidade_Produtos) ");
 					sql.Append("VALUES (@nome, @descricao)");
 
 					comandoSql.Parameters.Add(new SqlParameter("@nome", nome));
@@ -35,7 +35,7 @@ namespace AcessoDados.ProdutosBanco.SaveCategoria
 			catch (Exception)
 			{
 
-				throw new Exception("Ocorreu um erro no método SalvarCategoria, Caso o problema persista, entre em contato com o Administrador do sistema");
+				throw new Exception("Ocorreu um erro no método SalvarUnidade, Caso o problema persista, entre em contato com o Administrador do sistema");
 			}
 		}
 	}

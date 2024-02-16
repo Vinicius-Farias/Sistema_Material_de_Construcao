@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcessoDados.ProdutosBanco.UpdateCategoria
+namespace AcessoDados.CategoriaBanco.SaveCategoria
 {
-	public class UpdateCategoriaAD
+	public class SaveCategoriaAD
 	{
 		SqlCommand comandoSql = new SqlCommand();
 		StringBuilder sql = new StringBuilder();
 
-		public void AlteraCategoria(int idCategoria, string nome, string descricao)
+		public void SalvarCategoria(string nome, string descricao)
 		{
 			try
 			{
@@ -21,13 +21,11 @@ namespace AcessoDados.ProdutosBanco.UpdateCategoria
 				{
 					conexao.Open();
 
-					sql.Append("UPDATE Categoria_Produtos ");
-					sql.Append("SET Nome_Categoria_Produtos = @nome, Descricao_Categoria_Produtos = @descricao ");
-					sql.Append("WHERE Id_Categoria_Produtos = @idCategoria");
+					sql.Append("INSERT INTO Categoria_Produtos (Nome_Categoria_Produtos, Descricao_Categoria_Produtos) ");
+					sql.Append("VALUES (@nome, @descricao)");
 
 					comandoSql.Parameters.Add(new SqlParameter("@nome", nome));
 					comandoSql.Parameters.Add(new SqlParameter("@descricao", descricao));
-					comandoSql.Parameters.Add(new SqlParameter("@idCategoria", idCategoria));
 
 					comandoSql.CommandText = sql.ToString();
 					comandoSql.Connection = conexao;
@@ -37,7 +35,7 @@ namespace AcessoDados.ProdutosBanco.UpdateCategoria
 			catch (Exception)
 			{
 
-				throw new Exception("Ocorreu um erro no método AlteraCategoria. Caso o problema persista. entre em contato com o Administrador do Sistema");
+				throw new Exception("Ocorreu um erro no método SalvarCategoria, Caso o problema persista, entre em contato com o Administrador do sistema");
 			}
 		}
 	}

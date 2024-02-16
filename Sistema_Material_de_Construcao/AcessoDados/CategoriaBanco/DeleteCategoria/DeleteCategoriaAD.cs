@@ -1,21 +1,19 @@
 ﻿using AcessoDados.ConectionBanco;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcessoDados.ProdutosBanco.SelectCategoria
+namespace AcessoDados.CategoriaBanco.DeleteCategoria
 {
-	public class SelectCategoriaAD
+	public class DeleteCategoriaAD
 	{
 		SqlCommand comandoSql = new SqlCommand();
 		StringBuilder sql = new StringBuilder();
-		DataTable dadosTabela = new DataTable();
 
-		public DataTable ListaCategoria()
+		public void ExcluirCategoria(int idCategoria)
 		{
 			try
 			{
@@ -23,19 +21,20 @@ namespace AcessoDados.ProdutosBanco.SelectCategoria
 				{
 					conexao.Open();
 
-					sql.Append("SELECT * FROM Categoria_Produtos ");
-					sql.Append("ORDER BY Id_Categoria_Produtos DESC");
+					sql.Append("DELETE FROM Categoria_Produtos ");
+					sql.Append("WHERE Id_Categoria_Produtos = @idCategoria");
+
+					comandoSql.Parameters.Add(new SqlParameter("@idCategoria", idCategoria));
 
 					comandoSql.CommandText = sql.ToString();
 					comandoSql.Connection = conexao;
-					dadosTabela.Load(comandoSql.ExecuteReader());
-					return dadosTabela;
+					comandoSql.ExecuteNonQuery();
 				}
 			}
 			catch (Exception)
 			{
 
-				throw new Exception("Ocorreu um erro no método ListaCategoria. Caso o problema persista, entre em contato com o Administrador do Sitema.");
+				throw new Exception("Ocorreu um erro no método ExcluirCategoria. Caso o problema persista. entre em contato com o Administrador do Sistema");
 			}
 		}
 	}
