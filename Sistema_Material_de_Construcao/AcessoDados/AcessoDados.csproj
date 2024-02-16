@@ -60,6 +60,10 @@
     <Compile Include="FuncionarioBanco\SelectFuncionario\PesquisarNomeFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\SelectFuncionario\SelectFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\UpdateFuncionario\UpdateFuncionarioAD.cs" />
+    <Compile Include="ProdutosBanco\DeleteCategoria\DeleteCategoriaAD.cs" />
+    <Compile Include="ProdutosBanco\SaveCategoria\SaveCategoriaAD.cs" />
+    <Compile Include="ProdutosBanco\SelectCategoria\SelectCategoriaAD.cs" />
+    <Compile Include="ProdutosBanco\UpdateCategoria\UpdateCategoriaAD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FuncionarioBanco\SaveFuncionario\SaveFuncionariosAD.cs" />
   </ItemGroup>
