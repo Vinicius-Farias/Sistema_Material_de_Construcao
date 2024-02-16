@@ -26,9 +26,9 @@ namespace AcessoDados.FuncionarioBanco.UpdateFuncionario
 					sql.Append("SET Nome_Funcionario = @nome, Endereco_Funcionario = @endereco, Bairro_Funcionario = @bairro, Cep_Funcionario = @cep, ");
 					sql.Append("Cidade_Funcionario = @cidade, Email_Funcionario = @email, Nascimento_Funcionario = @nascimento, Telefone1_Funcionario = @telefone1, ");
 					sql.Append("Telefone2_Funcionario = @telefone2, Rg_Funcionario = @rg, Cpf_Funcionario = @cpf, ");
-					sql.Append("Observacoes_Funcionario = @observacoes, Data_Cadastro_Funcionario = @dataCadastro");
+					sql.Append("Observacoes_Funcionario = @observacoes, Data_Cadastro_Funcionario = @dataCadastro ");
 
-					sql.Append("WHERE (Id_Funcionario = @idFuncionario)");
+					sql.Append("WHERE Id_Funcionario = @idFuncionario");
 
 					comandoSql.Parameters.Add(new SqlParameter("@nome", nome));
 					comandoSql.Parameters.Add(new SqlParameter("@endereco", endereco));

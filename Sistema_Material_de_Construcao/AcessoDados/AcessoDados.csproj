@@ -41,6 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteBanco\DeleteCliente\DeleteClienteAD.cs" />
+    <Compile Include="ClienteBanco\SaveCliente\SaveClienteAD.cs" />
+    <Compile Include="ClienteBanco\SaveCliente\SavePessoaFisicaAD.cs" />
+    <Compile Include="ClienteBanco\SaveCliente\SavePessoaJuridicaAD.cs" />
+    <Compile Include="ClienteBanco\SelectCliente\PesquisaCnpjClienteAD.cs" />
+    <Compile Include="ClienteBanco\SelectCliente\PesquisaCpfClienteAD.cs" />
+    <Compile Include="ClienteBanco\SelectCliente\PesquisaNomeClienteAD.cs" />
+    <Compile Include="ClienteBanco\SelectCliente\SelectClienteAD.cs" />
+    <Compile Include="ClienteBanco\SelectCliente\SelectPessoaFisicaAD.cs" />
+    <Compile Include="ClienteBanco\SelectCliente\SelectPessoaJuridicaAD.cs" />
+    <Compile Include="ClienteBanco\UpdateCliente\UpdateClienteAD.cs" />
+    <Compile Include="ClienteBanco\UpdateCliente\UpdatePessoaFisicaAD.cs" />
+    <Compile Include="ClienteBanco\UpdateCliente\UpdatePessoaJuridicaAD.cs" />
     <Compile Include="ConectionBanco\Conexao.cs" />
     <Compile Include="FuncionarioBanco\DeleteFuncionario\DeleteFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\SelectFuncionario\PesquisarCpfFuncionarioAD.cs" />
@@ -50,8 +63,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FuncionarioBanco\SaveFuncionario\SaveFuncionariosAD.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
