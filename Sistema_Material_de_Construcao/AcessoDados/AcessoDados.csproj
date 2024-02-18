@@ -64,6 +64,10 @@
     <Compile Include="CategoriaBanco\SaveCategoria\SaveCategoriaAD.cs" />
     <Compile Include="CategoriaBanco\SelectCategoria\SelectCategoriaAD.cs" />
     <Compile Include="CategoriaBanco\UpdateCategoria\UpdateCategoriaAD.cs" />
+    <Compile Include="ProdutosBanco\DeleteProduto\DeleteProdutoAD.cs" />
+    <Compile Include="ProdutosBanco\SaveProduto\SaveProdutoAD.cs" />
+    <Compile Include="ProdutosBanco\SelectProduto\SelectProdutoAD.cs" />
+    <Compile Include="ProdutosBanco\UpdateProduto\UpdateProdutoAD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FuncionarioBanco\SaveFuncionario\SaveFuncionariosAD.cs" />
     <Compile Include="UnidadeBanco\DeleteUnidade\DeleteUnidadeAD.cs" />
