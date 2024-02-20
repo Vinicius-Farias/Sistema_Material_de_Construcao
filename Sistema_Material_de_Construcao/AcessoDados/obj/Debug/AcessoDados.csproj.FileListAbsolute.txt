@@ -1,0 +1,6 @@
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\AcessoDados\bin\Debug\AcessoDados.dll
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\AcessoDados\bin\Debug\AcessoDados.pdb
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\AcessoDados\obj\Debug\AcessoDados.csproj.AssemblyReference.cache
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\AcessoDados\obj\Debug\AcessoDados.csproj.CoreCompileInputs.cache
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\AcessoDados\obj\Debug\AcessoDados.dll
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\AcessoDados\obj\Debug\AcessoDados.pdb

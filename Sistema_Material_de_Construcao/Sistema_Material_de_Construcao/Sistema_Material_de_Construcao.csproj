@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmListaProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaProdutos.Designer.cs">
+      <DependentUpon>frmListaProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmListaProdutos.resx">
+      <DependentUpon>frmListaProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +109,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <None Include="Resources\procurar %281%29.png" />
+    <None Include="Resources\procurar.png" />
+    <None Include="Resources\usuarios.png" />
+    <None Include="Resources\funcionario-homem-alt.png" />
+    <None Include="Resources\caixa-aberta.png" />
+    <None Include="Resources\unidade.png" />
+    <None Include="Resources\categoria.png" />
+    <None Include="Resources\orçamentos.png" />
+    <None Include="Resources\vendas.png" />
+    <None Include="Resources\Relatorio_Produtos.png" />
+    <None Include="Resources\produtos.png" />
+    <None Include="Resources\clientes.png" />
+    <None Include="Resources\funcionários.png" />
+    <None Include="Resources\casa %282%29.png" />
+    <None Include="Resources\aplicativos %281%29.png" />
+    <None Include="Resources\excluir-aplicativos %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RegraNegocio\RegraNegocio.csproj">

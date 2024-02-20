@@ -1,0 +1,9 @@
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\bin\Debug\RegraNegocio.dll
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\bin\Debug\RegraNegocio.pdb
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\bin\Debug\AcessoDados.dll
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\bin\Debug\AcessoDados.pdb
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\obj\Debug\RegraNegocio.csproj.AssemblyReference.cache
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\obj\Debug\RegraNegocio.csproj.CoreCompileInputs.cache
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\obj\Debug\RegraNegocio.csproj.CopyComplete
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\obj\Debug\RegraNegocio.dll
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\RegraNegocio\obj\Debug\RegraNegocio.pdb
