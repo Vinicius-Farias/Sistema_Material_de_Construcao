@@ -24,3 +24,4 @@ C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_
 C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\Sistema_Material_de_Construcao\bin\Debug\RegraNegocio.dll
 C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\Sistema_Material_de_Construcao\bin\Debug\RegraNegocio.pdb
 C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\Sistema_Material_de_Construcao\obj\Debug\Sistema_Material_de_Construcao.frmListaProdutos.resources
+C:\Users\valor\OneDrive\Documentos\SistemaMaterialContrucao\Sistema_Material_de_Construcao\Sistema_Material_de_Construcao\obj\Debug\Sistema_Material_de_Construcao.frmProdutos.resources

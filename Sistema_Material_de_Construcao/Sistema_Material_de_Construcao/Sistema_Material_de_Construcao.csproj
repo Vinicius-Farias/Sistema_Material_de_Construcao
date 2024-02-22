@@ -76,6 +76,12 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmListaProdutos.resx">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +118,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <None Include="Resources\R-removebg-preview.png" />
+    <None Include="Resources\materiais-construcao-removebg-preview.png" />
+    <None Include="Resources\galeria_1355_4_calegi-materiais-de-construcao.png" />
+    <None Include="Resources\Materiais-Construcao--removebg-preview.png" />
+    <None Include="Resources\Materiais-Construcao-.png" />
+    <None Include="Resources\perto.png" />
+    <None Include="Resources\borracha %281%29.png" />
+    <None Include="Resources\salvar.png" />
     <None Include="Resources\procurar %281%29.png" />
     <None Include="Resources\procurar.png" />
     <None Include="Resources\usuarios.png" />

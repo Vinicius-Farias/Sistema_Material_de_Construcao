@@ -14,6 +14,7 @@ namespace Sistema_Material_de_Construcao
 	public partial class frmPrincipal : KryptonForm
 	{
 		frmListaProdutos FrmListaProdutos;
+		frmProdutos FrmProdutos;
 		public frmPrincipal()
 		{
 			InitializeComponent();
@@ -37,15 +38,9 @@ namespace Sistema_Material_de_Construcao
 			else
 			{
 				FrmListaProdutos.Activate();
-				if (pnlMenu.Width <= 60)
-				{
-					FrmListaProdutos.Size = new System.Drawing.Size(1164, 600);
-				}
 			}
 			
 		}
-
-		
 
 		private void menuTransicao_Tick(object sender, EventArgs e)
 		{
@@ -105,6 +100,28 @@ namespace Sistema_Material_de_Construcao
 			TelaInicio();
 		}
 
-		
+		private void btnProdutos_Click(object sender, EventArgs e)
+		{
+
+			if (FrmProdutos == null)
+			{
+				FrmProdutos = new frmProdutos();
+				FrmProdutos.FormClosed += FrmProdutos_FormClosed;
+				FrmProdutos.MdiParent = this;
+				FrmProdutos.TopLevel = false;
+				FrmProdutos.Dock = DockStyle.Fill;
+				FrmProdutos.Show(); 
+			} 
+			else
+			{
+				FrmProdutos.Activate();
+			}
+
+		}
+
+		private void FrmProdutos_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmProdutos = null;
+		}
 	}
 }

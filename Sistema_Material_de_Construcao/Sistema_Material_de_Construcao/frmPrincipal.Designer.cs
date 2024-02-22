@@ -30,6 +30,8 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.pnlMenu = new System.Windows.Forms.Panel();
+			this.btnUnidade = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+			this.btnCategoria = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnOrcamento = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnVendas = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnRelatorio = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -39,8 +41,6 @@
 			this.btnInicio = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnMenu = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.menuTransicao = new System.Windows.Forms.Timer(this.components);
-			this.btnCategoria = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-			this.btnUnidade = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.timerResponsivo = new System.Windows.Forms.Timer(this.components);
 			this.pnlMenu.SuspendLayout();
 			this.SuspendLayout();
@@ -63,6 +63,102 @@
 			this.pnlMenu.Name = "pnlMenu";
 			this.pnlMenu.Size = new System.Drawing.Size(60, 639);
 			this.pnlMenu.TabIndex = 0;
+			// 
+			// btnUnidade
+			// 
+			this.btnUnidade.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Cluster;
+			this.btnUnidade.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnUnidade.Location = new System.Drawing.Point(0, 578);
+			this.btnUnidade.Name = "btnUnidade";
+			this.btnUnidade.OverrideDefault.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnUnidade.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnUnidade.OverrideFocus.Back.Color1 = System.Drawing.Color.Gray;
+			this.btnUnidade.OverrideFocus.Back.Color2 = System.Drawing.Color.Gray;
+			this.btnUnidade.Size = new System.Drawing.Size(203, 59);
+			this.btnUnidade.StateCommon.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnUnidade.StateCommon.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnUnidade.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnUnidade.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+			this.btnUnidade.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+			this.btnUnidade.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnUnidade.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+			this.btnUnidade.StateCommon.Border.Rounding = 0;
+			this.btnUnidade.StateCommon.Border.Width = 0;
+			this.btnUnidade.StateCommon.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+			this.btnUnidade.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+			this.btnUnidade.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+			this.btnUnidade.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+			this.btnUnidade.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+			this.btnUnidade.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.btnUnidade.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+			this.btnUnidade.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnUnidade.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnUnidade.StateNormal.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnUnidade.StateNormal.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnUnidade.StatePressed.Back.Color1 = System.Drawing.Color.Gray;
+			this.btnUnidade.StatePressed.Back.Color2 = System.Drawing.Color.Gray;
+			this.btnUnidade.StateTracking.Back.Color1 = System.Drawing.Color.Gray;
+			this.btnUnidade.StateTracking.Back.Color2 = System.Drawing.Color.Gray;
+			this.btnUnidade.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnUnidade.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
+			this.btnUnidade.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
+			this.btnUnidade.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnUnidade.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+			this.btnUnidade.TabIndex = 6;
+			this.btnUnidade.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.unidade;
+			this.btnUnidade.Values.Text = "        Unidades";
+			// 
+			// btnCategoria
+			// 
+			this.btnCategoria.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Cluster;
+			this.btnCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCategoria.Location = new System.Drawing.Point(1, 514);
+			this.btnCategoria.Name = "btnCategoria";
+			this.btnCategoria.OverrideDefault.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnCategoria.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnCategoria.OverrideFocus.Back.Color1 = System.Drawing.Color.Gray;
+			this.btnCategoria.OverrideFocus.Back.Color2 = System.Drawing.Color.Gray;
+			this.btnCategoria.Size = new System.Drawing.Size(203, 59);
+			this.btnCategoria.StateCommon.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnCategoria.StateCommon.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnCategoria.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnCategoria.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+			this.btnCategoria.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+			this.btnCategoria.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnCategoria.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+			this.btnCategoria.StateCommon.Border.Rounding = 0;
+			this.btnCategoria.StateCommon.Border.Width = 0;
+			this.btnCategoria.StateCommon.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+			this.btnCategoria.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+			this.btnCategoria.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+			this.btnCategoria.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+			this.btnCategoria.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+			this.btnCategoria.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.btnCategoria.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+			this.btnCategoria.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnCategoria.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnCategoria.StateNormal.Back.Color1 = System.Drawing.Color.DimGray;
+			this.btnCategoria.StateNormal.Back.Color2 = System.Drawing.Color.DimGray;
+			this.btnCategoria.StatePressed.Back.Color1 = System.Drawing.Color.Gray;
+			this.btnCategoria.StatePressed.Back.Color2 = System.Drawing.Color.Gray;
+			this.btnCategoria.StateTracking.Back.Color1 = System.Drawing.Color.Gray;
+			this.btnCategoria.StateTracking.Back.Color2 = System.Drawing.Color.Gray;
+			this.btnCategoria.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnCategoria.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
+			this.btnCategoria.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
+			this.btnCategoria.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.btnCategoria.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+			this.btnCategoria.TabIndex = 5;
+			this.btnCategoria.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.categoria;
+			this.btnCategoria.Values.Text = "        Categoria";
 			// 
 			// btnOrcamento
 			// 
@@ -255,6 +351,7 @@
 			this.btnProdutos.TabIndex = 4;
 			this.btnProdutos.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.produtos;
 			this.btnProdutos.Values.Text = "       Produtos";
+			this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
 			// 
 			// btnCliente
 			// 
@@ -475,102 +572,6 @@
 			// 
 			this.menuTransicao.Interval = 10;
 			this.menuTransicao.Tick += new System.EventHandler(this.menuTransicao_Tick);
-			// 
-			// btnCategoria
-			// 
-			this.btnCategoria.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Cluster;
-			this.btnCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCategoria.Location = new System.Drawing.Point(1, 514);
-			this.btnCategoria.Name = "btnCategoria";
-			this.btnCategoria.OverrideDefault.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnCategoria.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnCategoria.OverrideFocus.Back.Color1 = System.Drawing.Color.Gray;
-			this.btnCategoria.OverrideFocus.Back.Color2 = System.Drawing.Color.Gray;
-			this.btnCategoria.Size = new System.Drawing.Size(203, 59);
-			this.btnCategoria.StateCommon.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnCategoria.StateCommon.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnCategoria.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnCategoria.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-			this.btnCategoria.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
-			this.btnCategoria.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnCategoria.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.btnCategoria.StateCommon.Border.Rounding = 0;
-			this.btnCategoria.StateCommon.Border.Width = 0;
-			this.btnCategoria.StateCommon.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-			this.btnCategoria.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-			this.btnCategoria.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-			this.btnCategoria.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-			this.btnCategoria.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-			this.btnCategoria.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.btnCategoria.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-			this.btnCategoria.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnCategoria.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnCategoria.StateNormal.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnCategoria.StateNormal.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnCategoria.StatePressed.Back.Color1 = System.Drawing.Color.Gray;
-			this.btnCategoria.StatePressed.Back.Color2 = System.Drawing.Color.Gray;
-			this.btnCategoria.StateTracking.Back.Color1 = System.Drawing.Color.Gray;
-			this.btnCategoria.StateTracking.Back.Color2 = System.Drawing.Color.Gray;
-			this.btnCategoria.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnCategoria.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
-			this.btnCategoria.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
-			this.btnCategoria.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnCategoria.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.btnCategoria.TabIndex = 5;
-			this.btnCategoria.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.categoria;
-			this.btnCategoria.Values.Text = "        Categoria";
-			// 
-			// btnUnidade
-			// 
-			this.btnUnidade.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Cluster;
-			this.btnUnidade.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnUnidade.Location = new System.Drawing.Point(0, 578);
-			this.btnUnidade.Name = "btnUnidade";
-			this.btnUnidade.OverrideDefault.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnUnidade.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnUnidade.OverrideFocus.Back.Color1 = System.Drawing.Color.Gray;
-			this.btnUnidade.OverrideFocus.Back.Color2 = System.Drawing.Color.Gray;
-			this.btnUnidade.Size = new System.Drawing.Size(203, 59);
-			this.btnUnidade.StateCommon.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnUnidade.StateCommon.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnUnidade.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnUnidade.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-			this.btnUnidade.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
-			this.btnUnidade.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnUnidade.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.btnUnidade.StateCommon.Border.Rounding = 0;
-			this.btnUnidade.StateCommon.Border.Width = 0;
-			this.btnUnidade.StateCommon.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-			this.btnUnidade.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-			this.btnUnidade.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-			this.btnUnidade.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-			this.btnUnidade.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-			this.btnUnidade.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.btnUnidade.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-			this.btnUnidade.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnUnidade.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnUnidade.StateNormal.Back.Color1 = System.Drawing.Color.DimGray;
-			this.btnUnidade.StateNormal.Back.Color2 = System.Drawing.Color.DimGray;
-			this.btnUnidade.StatePressed.Back.Color1 = System.Drawing.Color.Gray;
-			this.btnUnidade.StatePressed.Back.Color2 = System.Drawing.Color.Gray;
-			this.btnUnidade.StateTracking.Back.Color1 = System.Drawing.Color.Gray;
-			this.btnUnidade.StateTracking.Back.Color2 = System.Drawing.Color.Gray;
-			this.btnUnidade.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnUnidade.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
-			this.btnUnidade.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
-			this.btnUnidade.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.btnUnidade.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.btnUnidade.TabIndex = 6;
-			this.btnUnidade.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.unidade;
-			this.btnUnidade.Values.Text = "        Unidades";
 			// 
 			// timerResponsivo
 			// 
