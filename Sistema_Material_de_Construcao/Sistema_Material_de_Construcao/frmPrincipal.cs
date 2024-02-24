@@ -15,6 +15,7 @@ namespace Sistema_Material_de_Construcao
 	{
 		frmListaProdutos FrmListaProdutos;
 		frmProdutos FrmProdutos;
+		frmFuncionarios FrmFuncionarios;
 		public frmPrincipal()
 		{
 			InitializeComponent();
@@ -75,10 +76,15 @@ namespace Sistema_Material_de_Construcao
 			if (menuExpand == false)
 			{
 				if (FrmListaProdutos != null)
-				{
 					FrmListaProdutos.Size = new System.Drawing.Size(1164, 600);
-					timerResponsivo.Stop();
-				}
+					
+				if(FrmFuncionarios != null)
+					FrmFuncionarios.Size = new System.Drawing.Size(1164, 600);
+
+				if (FrmProdutos != null)
+					FrmProdutos.Size = new System.Drawing.Size(1164, 600);
+
+				timerResponsivo.Stop();
 			}
 				
 		}
@@ -122,6 +128,28 @@ namespace Sistema_Material_de_Construcao
 		private void FrmProdutos_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			FrmProdutos = null;
+		}
+
+		private void btnFuncionario_Click(object sender, EventArgs e)
+		{
+			if (FrmProdutos == null)
+			{
+				FrmFuncionarios = new frmFuncionarios();
+				FrmFuncionarios.FormClosed += FrmFuncionarios_FormClosed;
+				FrmFuncionarios.MdiParent = this;
+				FrmFuncionarios.TopLevel = false;
+				FrmFuncionarios.Dock = DockStyle.Fill;
+				FrmFuncionarios.Show();
+			}
+			else
+			{
+				FrmFuncionarios.Activate();
+			}
+		}
+
+		private void FrmFuncionarios_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmFuncionarios = null;
 		}
 	}
 }

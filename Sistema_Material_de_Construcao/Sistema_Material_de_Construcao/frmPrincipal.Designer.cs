@@ -458,6 +458,7 @@
 			this.btnFuncionario.TabIndex = 3;
 			this.btnFuncionario.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.funcionários;
 			this.btnFuncionario.Values.Text = "      Funcionários";
+			this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
 			// 
 			// btnInicio
 			// 

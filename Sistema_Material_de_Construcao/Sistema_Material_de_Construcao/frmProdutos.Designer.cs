@@ -30,6 +30,7 @@
 		{
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
 			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.txtMargem = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.txtVenda = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.txtCusto = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -63,17 +64,16 @@
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
 			this.kryptonGroup1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cbUnidade)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cbCategoria)).BeginInit();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -107,6 +107,18 @@
 			this.label1.Size = new System.Drawing.Size(224, 25);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "Cadastro de Produtos";
+			this.label1.Click += new System.EventHandler(this.label1_Click);
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.produtos;
+			this.pictureBox1.Location = new System.Drawing.Point(12, 4);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(58, 53);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
 			// 
 			// txtMargem
 			// 
@@ -689,17 +701,6 @@
 			this.pictureBox2.TabIndex = 23;
 			this.pictureBox2.TabStop = false;
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.produtos;
-			this.pictureBox1.Location = new System.Drawing.Point(12, 4);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(58, 53);
-			this.pictureBox1.TabIndex = 1;
-			this.pictureBox1.TabStop = false;
-			// 
 			// pictureBox3
 			// 
 			this.pictureBox3.BackgroundImage = global::Sistema_Material_de_Construcao.Properties.Resources.materiais_construcao_removebg_preview;
@@ -761,12 +762,12 @@
 			this.kryptonGroup1.Panel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
 			this.kryptonGroup1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.cbUnidade)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.cbCategoria)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
