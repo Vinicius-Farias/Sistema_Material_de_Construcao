@@ -16,6 +16,8 @@ namespace Sistema_Material_de_Construcao
 		frmListaProdutos FrmListaProdutos;
 		frmProdutos FrmProdutos;
 		frmFuncionarios FrmFuncionarios;
+		frmClientes FrmClientes;
+
 		public frmPrincipal()
 		{
 			InitializeComponent();
@@ -23,25 +25,6 @@ namespace Sistema_Material_de_Construcao
 		}
 
 		bool menuExpand = false;
-
-		private void TelaInicio()
-		{
-			if (FrmListaProdutos == null)
-			{
-				FrmListaProdutos = new frmListaProdutos();
-				FrmListaProdutos.FormClosed += FrmListaProdutos_FormClosed;
-				FrmListaProdutos.MdiParent = this;
-				FrmListaProdutos.TopLevel = false;
-				FrmListaProdutos.Dock = DockStyle.Fill;
-				FrmListaProdutos.Show();
-				
-			}
-			else
-			{
-				FrmListaProdutos.Activate();
-			}
-			
-		}
 
 		private void menuTransicao_Tick(object sender, EventArgs e)
 		{
@@ -66,38 +49,55 @@ namespace Sistema_Material_de_Construcao
 			
 		}
 
-		private void FrmListaProdutos_FormClosed(object sender, FormClosedEventArgs e)
-		{
-			FrmListaProdutos = null;
-		}
-
 		private void timerResponsivo_Tick(object sender, EventArgs e)
 		{
 			if (menuExpand == false)
 			{
 				if (FrmListaProdutos != null)
 					FrmListaProdutos.Size = new System.Drawing.Size(1164, 600);
-					
-				if(FrmFuncionarios != null)
+
+				if (FrmFuncionarios != null)
 					FrmFuncionarios.Size = new System.Drawing.Size(1164, 600);
 
 				if (FrmProdutos != null)
 					FrmProdutos.Size = new System.Drawing.Size(1164, 600);
 
+				if (FrmClientes != null)
+					FrmClientes.Size = new System.Drawing.Size(1164, 600);
+
 				timerResponsivo.Stop();
 			}
-				
+
+		}
+
+		private void TelaInicio()
+		{
+			if (FrmListaProdutos == null)
+			{
+				FrmListaProdutos = new frmListaProdutos();
+				FrmListaProdutos.FormClosed += FrmListaProdutos_FormClosed;
+				FrmListaProdutos.MdiParent = this;
+				FrmListaProdutos.TopLevel = false;
+				FrmListaProdutos.Dock = DockStyle.Fill;
+				FrmListaProdutos.Show();
+
+			}
+			else
+			{
+				FrmListaProdutos.Activate();
+			}
+
+		}
+
+		private void FrmListaProdutos_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmListaProdutos = null;
 		}
 
 		private void btnMenu_Click(object sender, EventArgs e)
 		{
 			menuTransicao.Start();
 			timerResponsivo.Start();
-			
-		}
-
-		private void frmPrincipal_Load(object sender, EventArgs e)
-		{
 			
 		}
 
@@ -150,6 +150,28 @@ namespace Sistema_Material_de_Construcao
 		private void FrmFuncionarios_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			FrmFuncionarios = null;
+		}
+
+		private void btnCliente_Click(object sender, EventArgs e)
+		{
+			if (FrmProdutos == null)
+			{
+				FrmClientes = new frmClientes();
+				FrmClientes.FormClosed += FrmClientes_FormClosed;
+				FrmClientes.MdiParent = this;
+				FrmClientes.TopLevel = false;
+				FrmClientes.Dock = DockStyle.Fill;
+				FrmClientes.Show();
+			}
+			else
+			{
+				FrmClientes.Activate();
+			}
+		}
+
+		private void FrmClientes_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmClientes = null;
 		}
 	}
 }

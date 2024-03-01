@@ -400,6 +400,7 @@
 			this.btnCliente.TabIndex = 4;
 			this.btnCliente.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.clientes;
 			this.btnCliente.Values.Text = "       Clientes";
+			this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
 			// 
 			// btnFuncionario
 			// 
@@ -613,7 +614,6 @@
 			this.StateCommon.Header.Content.ShortText.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.StateCommon.Header.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
 			this.Text = "                Início";
-			this.Load += new System.EventHandler(this.frmPrincipal_Load);
 			this.pnlMenu.ResumeLayout(false);
 			this.ResumeLayout(false);
 
