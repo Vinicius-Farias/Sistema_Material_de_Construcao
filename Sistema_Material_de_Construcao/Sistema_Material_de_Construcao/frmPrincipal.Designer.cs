@@ -111,6 +111,7 @@
 			this.btnUnidade.TabIndex = 6;
 			this.btnUnidade.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.unidade;
 			this.btnUnidade.Values.Text = "        Unidades";
+			this.btnUnidade.Click += new System.EventHandler(this.btnUnidade_Click);
 			// 
 			// btnCategoria
 			// 
@@ -159,6 +160,7 @@
 			this.btnCategoria.TabIndex = 5;
 			this.btnCategoria.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.categoria;
 			this.btnCategoria.Values.Text = "        Categoria";
+			this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
 			// 
 			// btnOrcamento
 			// 

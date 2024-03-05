@@ -13,18 +13,25 @@ namespace Sistema_Material_de_Construcao
 {
 	public partial class frmPrincipal : KryptonForm
 	{
-		frmListaProdutos FrmListaProdutos;
-		frmProdutos FrmProdutos;
-		frmFuncionarios FrmFuncionarios;
-		frmClientes FrmClientes;
-
+		private frmListaProdutos FrmListaProdutos;
+		private frmProdutos FrmProdutos;
+		private frmFuncionarios FrmFuncionarios;
+		private frmClientes FrmClientes;
+		private frmCategoria FrmCategoria;
+		private frmUnidades FrmUnidades;
+		private frmListarFuncionarios FrmListarFuncionarios;
+		private frmListarCliente FrmListarCliente;
+		
 		public frmPrincipal()
 		{
 			InitializeComponent();
 			TelaInicio();
-		}
 
+			FrmListaProdutos = new frmListaProdutos(this);
+		}
 		bool menuExpand = false;
+
+		
 
 		private void menuTransicao_Tick(object sender, EventArgs e)
 		{
@@ -65,16 +72,66 @@ namespace Sistema_Material_de_Construcao
 				if (FrmClientes != null)
 					FrmClientes.Size = new System.Drawing.Size(1164, 600);
 
+				if (FrmListarFuncionarios != null)
+					FrmListarFuncionarios.Size = new System.Drawing.Size(1164, 600);
+
+				if (FrmListarCliente != null)
+					FrmListarCliente.Size = new System.Drawing.Size(1164, 600);
+
 				timerResponsivo.Stop();
 			}
 
+		}
+
+		public void ChamaListaCliente()
+		{
+			if (FrmListarCliente == null)
+			{
+				FrmListarCliente = new frmListarCliente();
+				FrmListarCliente.FormClosed += FrmListarCliente_FormClosed;
+				FrmListarCliente.MdiParent = this;
+				FrmListarCliente.TopLevel = false;
+				FrmListarCliente.Dock = DockStyle.Fill;
+				FrmListarCliente.Show();
+			}
+			else
+			{
+				FrmListarCliente.Activate();
+			}
+		}
+
+		private void FrmListarCliente_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmListarCliente = null;
+		}
+
+		public void ChamaListaFuncionario()
+		{
+
+			if (FrmListarFuncionarios == null)
+			{
+				FrmListarFuncionarios = new frmListarFuncionarios();
+				FrmListarFuncionarios.FormClosed += FrmListarFuncionarios_FormClosed;
+				FrmListarFuncionarios.MdiParent = this;
+				FrmListarFuncionarios.TopLevel = false;
+				FrmListarFuncionarios.Dock = DockStyle.Fill;
+				FrmListarFuncionarios.Show();
+			}
+			else
+			{
+				FrmListarFuncionarios.Activate();
+			}
+		}
+		private void FrmListarFuncionarios_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmListarFuncionarios = null;
 		}
 
 		private void TelaInicio()
 		{
 			if (FrmListaProdutos == null)
 			{
-				FrmListaProdutos = new frmListaProdutos();
+				FrmListaProdutos = new frmListaProdutos(this);
 				FrmListaProdutos.FormClosed += FrmListaProdutos_FormClosed;
 				FrmListaProdutos.MdiParent = this;
 				FrmListaProdutos.TopLevel = false;
@@ -172,6 +229,18 @@ namespace Sistema_Material_de_Construcao
 		private void FrmClientes_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			FrmClientes = null;
+		}
+
+		private void btnCategoria_Click(object sender, EventArgs e)
+		{
+			FrmCategoria = new frmCategoria();
+			FrmCategoria.ShowDialog();
+		}
+
+		private void btnUnidade_Click(object sender, EventArgs e)
+		{
+			FrmUnidades = new frmUnidades();
+			FrmUnidades.ShowDialog();
 		}
 	}
 }

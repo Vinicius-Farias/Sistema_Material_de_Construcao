@@ -30,7 +30,6 @@
 		{
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
 			this.label1 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnListaFuncionario = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.btnListaCliente = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -52,12 +51,17 @@
 			this.Situacao_Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Anotacoes_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Data_Cadastro_Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
+			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
 			this.kryptonGroup1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// kryptonGroup1
@@ -89,16 +93,6 @@
 			this.label1.Size = new System.Drawing.Size(166, 25);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Listar Produtos";
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.caixa_aberta;
-			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(37, 43);
-			this.pictureBox1.TabIndex = 1;
-			this.pictureBox1.TabStop = false;
 			// 
 			// btnListaFuncionario
 			// 
@@ -151,6 +145,7 @@
 			this.btnListaFuncionario.TabIndex = 1;
 			this.btnListaFuncionario.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.funcionario_homem_alt;
 			this.btnListaFuncionario.Values.Text = " Listar Funcionários";
+			this.btnListaFuncionario.Click += new System.EventHandler(this.btnListaFuncionario_Click);
 			// 
 			// kryptonTextBox1
 			// 
@@ -219,6 +214,7 @@
 			this.btnListaCliente.TabIndex = 5;
 			this.btnListaCliente.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.usuarios;
 			this.btnListaCliente.Values.Text = " Listar Clientes";
+			this.btnListaCliente.Click += new System.EventHandler(this.btnListaCliente_Click);
 			// 
 			// btnBusca
 			// 
@@ -299,7 +295,9 @@
             this.Margem,
             this.Situacao_Produto,
             this.Anotacoes_Produtos,
-            this.Data_Cadastro_Produto});
+            this.Data_Cadastro_Produto,
+            this.btnEditar,
+            this.btnExcluir});
 			this.dgvProdutos.Location = new System.Drawing.Point(12, 142);
 			this.dgvProdutos.MultiSelect = false;
 			this.dgvProdutos.Name = "dgvProdutos";
@@ -379,7 +377,7 @@
 			this.Estoque_Minimo.HeaderText = "Estoque Minimo";
 			this.Estoque_Minimo.Name = "Estoque_Minimo";
 			this.Estoque_Minimo.ReadOnly = true;
-			this.Estoque_Minimo.Width = 70;
+			this.Estoque_Minimo.Width = 60;
 			// 
 			// Estoque_Atual
 			// 
@@ -387,7 +385,7 @@
 			this.Estoque_Atual.HeaderText = "Estoque Atual";
 			this.Estoque_Atual.Name = "Estoque_Atual";
 			this.Estoque_Atual.ReadOnly = true;
-			this.Estoque_Atual.Width = 70;
+			this.Estoque_Atual.Width = 60;
 			// 
 			// Valor_Compra
 			// 
@@ -395,7 +393,7 @@
 			this.Valor_Compra.HeaderText = "Valor Compra";
 			this.Valor_Compra.Name = "Valor_Compra";
 			this.Valor_Compra.ReadOnly = true;
-			this.Valor_Compra.Width = 80;
+			this.Valor_Compra.Width = 70;
 			// 
 			// Valor_Venda
 			// 
@@ -403,7 +401,7 @@
 			this.Valor_Venda.HeaderText = "Valor Venda";
 			this.Valor_Venda.Name = "Valor_Venda";
 			this.Valor_Venda.ReadOnly = true;
-			this.Valor_Venda.Width = 80;
+			this.Valor_Venda.Width = 70;
 			// 
 			// Margem
 			// 
@@ -411,7 +409,7 @@
 			this.Margem.HeaderText = "Margem";
 			this.Margem.Name = "Margem";
 			this.Margem.ReadOnly = true;
-			this.Margem.Width = 80;
+			this.Margem.Width = 70;
 			// 
 			// Situacao_Produto
 			// 
@@ -434,7 +432,48 @@
 			this.Data_Cadastro_Produto.HeaderText = "Data Cadastro";
 			this.Data_Cadastro_Produto.Name = "Data_Cadastro_Produto";
 			this.Data_Cadastro_Produto.ReadOnly = true;
-			this.Data_Cadastro_Produto.Width = 120;
+			// 
+			// dataGridViewImageColumn1
+			// 
+			this.dataGridViewImageColumn1.HeaderText = "";
+			this.dataGridViewImageColumn1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
+			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+			this.dataGridViewImageColumn1.ReadOnly = true;
+			this.dataGridViewImageColumn1.Width = 30;
+			// 
+			// dataGridViewImageColumn2
+			// 
+			this.dataGridViewImageColumn2.HeaderText = "";
+			this.dataGridViewImageColumn2.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
+			this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+			this.dataGridViewImageColumn2.ReadOnly = true;
+			this.dataGridViewImageColumn2.Width = 30;
+			// 
+			// btnEditar
+			// 
+			this.btnEditar.HeaderText = "";
+			this.btnEditar.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
+			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.ReadOnly = true;
+			this.btnEditar.Width = 30;
+			// 
+			// btnExcluir
+			// 
+			this.btnExcluir.HeaderText = "";
+			this.btnExcluir.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
+			this.btnExcluir.Name = "btnExcluir";
+			this.btnExcluir.ReadOnly = true;
+			this.btnExcluir.Width = 30;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.caixa_aberta;
+			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(37, 43);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
 			// 
 			// frmListaProdutos
 			// 
@@ -456,8 +495,8 @@
 			this.kryptonGroup1.Panel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
 			this.kryptonGroup1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -489,5 +528,9 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn Situacao_Produto;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Anotacoes_Produtos;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Data_Cadastro_Produto;
+		private System.Windows.Forms.DataGridViewImageColumn btnEditar;
+		private System.Windows.Forms.DataGridViewImageColumn btnExcluir;
+		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
 	}
 }

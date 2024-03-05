@@ -9,15 +9,32 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 
+
 namespace Sistema_Material_de_Construcao
 {
 	public partial class frmListaProdutos : KryptonForm
 	{
-		public frmListaProdutos()
+
+		private frmPrincipal FrmPrincipal;	
+
+		public frmListaProdutos(frmPrincipal FrmPrincipal)
 		{
 			InitializeComponent();
+
 			this.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
+			this.FrmPrincipal = FrmPrincipal;
 		}
 
+		public void btnListaFuncionario_Click(object sender, EventArgs e)
+		{
+			FrmPrincipal.ChamaListaFuncionario();
+			this.Close();
+		}
+
+		private void btnListaCliente_Click(object sender, EventArgs e)
+		{
+			FrmPrincipal.ChamaListaCliente();
+			this.Close();
+		}
 	}
 }
