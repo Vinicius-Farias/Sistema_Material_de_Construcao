@@ -38,8 +38,6 @@
 			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dgvFuncionario = new System.Windows.Forms.DataGridView();
-			this.rbNome = new System.Windows.Forms.RadioButton();
-			this.rbCPF = new System.Windows.Forms.RadioButton();
 			this.Id_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nome_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Endereco_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +54,8 @@
 			this.Data_Cadastro_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
+			this.rbNome = new System.Windows.Forms.RadioButton();
+			this.rbCPF = new System.Windows.Forms.RadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
@@ -152,9 +152,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnListaCliente.StateTracking.Border.Rounding = 5;
 			this.btnListaCliente.StateTracking.Border.Width = 1;
-			this.btnListaCliente.TabIndex = 6;
+			this.btnListaCliente.TabIndex = 5;
 			this.btnListaCliente.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.usuarios;
 			this.btnListaCliente.Values.Text = " Listar Clientes";
+			this.btnListaCliente.Click += new System.EventHandler(this.btnListaCliente_Click);
 			// 
 			// btnBusca
 			// 
@@ -204,9 +205,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnBusca.StateTracking.Border.Rounding = 5;
 			this.btnBusca.StateTracking.Border.Width = 1;
-			this.btnBusca.TabIndex = 9;
+			this.btnBusca.TabIndex = 3;
 			this.btnBusca.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.procurar__1_;
 			this.btnBusca.Values.Text = "";
+			this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
 			// 
 			// txtPes
 			// 
@@ -222,7 +224,7 @@
 			this.txtPes.StateCommon.Border.Rounding = 5;
 			this.txtPes.StateCommon.Border.Width = 1;
 			this.txtPes.StateCommon.Content.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-			this.txtPes.TabIndex = 8;
+			this.txtPes.TabIndex = 0;
 			// 
 			// btnListarProdutos
 			// 
@@ -272,9 +274,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnListarProdutos.StateTracking.Border.Rounding = 5;
 			this.btnListarProdutos.StateTracking.Border.Width = 1;
-			this.btnListarProdutos.TabIndex = 11;
+			this.btnListarProdutos.TabIndex = 4;
 			this.btnListarProdutos.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.caixa_aberta__1_;
 			this.btnListarProdutos.Values.Text = " Listar Produtos";
+			this.btnListarProdutos.Click += new System.EventHandler(this.btnListarProdutos_Click);
 			// 
 			// dataGridViewImageColumn1
 			// 
@@ -325,35 +328,7 @@
 			this.dgvFuncionario.RowHeadersVisible = false;
 			this.dgvFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvFuncionario.Size = new System.Drawing.Size(1140, 446);
-			this.dgvFuncionario.TabIndex = 12;
-			// 
-			// rbNome
-			// 
-			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbNome.AutoSize = true;
-			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.rbNome.Location = new System.Drawing.Point(607, 88);
-			this.rbNome.Name = "rbNome";
-			this.rbNome.Size = new System.Drawing.Size(66, 21);
-			this.rbNome.TabIndex = 13;
-			this.rbNome.TabStop = true;
-			this.rbNome.Text = "Nome";
-			this.rbNome.UseVisualStyleBackColor = true;
-			// 
-			// rbCPF
-			// 
-			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbCPF.AutoSize = true;
-			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.rbCPF.Location = new System.Drawing.Point(693, 88);
-			this.rbCPF.Name = "rbCPF";
-			this.rbCPF.Size = new System.Drawing.Size(52, 21);
-			this.rbCPF.TabIndex = 14;
-			this.rbCPF.TabStop = true;
-			this.rbCPF.Text = "CPF";
-			this.rbCPF.UseVisualStyleBackColor = true;
+			this.dgvFuncionario.TabIndex = 6;
 			// 
 			// Id_Funcionario
 			// 
@@ -478,6 +453,34 @@
 			this.btnExcluir.Name = "btnExcluir";
 			this.btnExcluir.ReadOnly = true;
 			this.btnExcluir.Width = 30;
+			// 
+			// rbNome
+			// 
+			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbNome.AutoSize = true;
+			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.rbNome.Location = new System.Drawing.Point(607, 88);
+			this.rbNome.Name = "rbNome";
+			this.rbNome.Size = new System.Drawing.Size(66, 21);
+			this.rbNome.TabIndex = 1;
+			this.rbNome.TabStop = true;
+			this.rbNome.Text = "Nome";
+			this.rbNome.UseVisualStyleBackColor = true;
+			// 
+			// rbCPF
+			// 
+			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbCPF.AutoSize = true;
+			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.rbCPF.Location = new System.Drawing.Point(693, 88);
+			this.rbCPF.Name = "rbCPF";
+			this.rbCPF.Size = new System.Drawing.Size(52, 21);
+			this.rbCPF.TabIndex = 2;
+			this.rbCPF.TabStop = true;
+			this.rbCPF.Text = "CPF";
+			this.rbCPF.UseVisualStyleBackColor = true;
 			// 
 			// frmListarFuncionarios
 			// 

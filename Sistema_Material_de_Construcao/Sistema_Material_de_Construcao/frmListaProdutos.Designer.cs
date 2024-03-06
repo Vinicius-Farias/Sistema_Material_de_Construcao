@@ -30,6 +30,7 @@
 		{
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
 			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnListaFuncionario = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.btnListaCliente = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -51,17 +52,16 @@
 			this.Situacao_Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Anotacoes_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Data_Cadastro_Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
 			this.kryptonGroup1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// kryptonGroup1
@@ -93,6 +93,16 @@
 			this.label1.Size = new System.Drawing.Size(166, 25);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Listar Produtos";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.caixa_aberta;
+			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(37, 43);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
 			// 
 			// btnListaFuncionario
 			// 
@@ -142,7 +152,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnListaFuncionario.StateTracking.Border.Rounding = 5;
 			this.btnListaFuncionario.StateTracking.Border.Width = 1;
-			this.btnListaFuncionario.TabIndex = 1;
+			this.btnListaFuncionario.TabIndex = 2;
 			this.btnListaFuncionario.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.funcionario_homem_alt;
 			this.btnListaFuncionario.Values.Text = " Listar Funcionários";
 			this.btnListaFuncionario.Click += new System.EventHandler(this.btnListaFuncionario_Click);
@@ -161,7 +171,7 @@
 			this.kryptonTextBox1.StateCommon.Border.Rounding = 5;
 			this.kryptonTextBox1.StateCommon.Border.Width = 1;
 			this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-			this.kryptonTextBox1.TabIndex = 4;
+			this.kryptonTextBox1.TabIndex = 0;
 			// 
 			// btnListaCliente
 			// 
@@ -211,7 +221,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnListaCliente.StateTracking.Border.Rounding = 5;
 			this.btnListaCliente.StateTracking.Border.Width = 1;
-			this.btnListaCliente.TabIndex = 5;
+			this.btnListaCliente.TabIndex = 3;
 			this.btnListaCliente.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.usuarios;
 			this.btnListaCliente.Values.Text = " Listar Clientes";
 			this.btnListaCliente.Click += new System.EventHandler(this.btnListaCliente_Click);
@@ -264,7 +274,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnBusca.StateTracking.Border.Rounding = 5;
 			this.btnBusca.StateTracking.Border.Width = 1;
-			this.btnBusca.TabIndex = 6;
+			this.btnBusca.TabIndex = 1;
 			this.btnBusca.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.procurar__1_;
 			this.btnBusca.Values.Text = "";
 			// 
@@ -305,7 +315,7 @@
 			this.dgvProdutos.RowHeadersVisible = false;
 			this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvProdutos.Size = new System.Drawing.Size(1140, 446);
-			this.dgvProdutos.TabIndex = 7;
+			this.dgvProdutos.TabIndex = 4;
 			// 
 			// Id_Produto
 			// 
@@ -433,22 +443,6 @@
 			this.Data_Cadastro_Produto.Name = "Data_Cadastro_Produto";
 			this.Data_Cadastro_Produto.ReadOnly = true;
 			// 
-			// dataGridViewImageColumn1
-			// 
-			this.dataGridViewImageColumn1.HeaderText = "";
-			this.dataGridViewImageColumn1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
-			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-			this.dataGridViewImageColumn1.ReadOnly = true;
-			this.dataGridViewImageColumn1.Width = 30;
-			// 
-			// dataGridViewImageColumn2
-			// 
-			this.dataGridViewImageColumn2.HeaderText = "";
-			this.dataGridViewImageColumn2.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
-			this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-			this.dataGridViewImageColumn2.ReadOnly = true;
-			this.dataGridViewImageColumn2.Width = 30;
-			// 
 			// btnEditar
 			// 
 			this.btnEditar.HeaderText = "";
@@ -465,15 +459,21 @@
 			this.btnExcluir.ReadOnly = true;
 			this.btnExcluir.Width = 30;
 			// 
-			// pictureBox1
+			// dataGridViewImageColumn1
 			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.caixa_aberta;
-			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(37, 43);
-			this.pictureBox1.TabIndex = 1;
-			this.pictureBox1.TabStop = false;
+			this.dataGridViewImageColumn1.HeaderText = "";
+			this.dataGridViewImageColumn1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
+			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+			this.dataGridViewImageColumn1.ReadOnly = true;
+			this.dataGridViewImageColumn1.Width = 30;
+			// 
+			// dataGridViewImageColumn2
+			// 
+			this.dataGridViewImageColumn2.HeaderText = "";
+			this.dataGridViewImageColumn2.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
+			this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+			this.dataGridViewImageColumn2.ReadOnly = true;
+			this.dataGridViewImageColumn2.Width = 30;
 			// 
 			// frmListaProdutos
 			// 
@@ -495,8 +495,8 @@
 			this.kryptonGroup1.Panel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
 			this.kryptonGroup1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

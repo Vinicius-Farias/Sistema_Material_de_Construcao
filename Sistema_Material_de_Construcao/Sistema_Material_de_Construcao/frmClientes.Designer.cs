@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.txtNome = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.txtEndereco = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.txtCidade = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -49,8 +49,8 @@
 			this.btnSalvar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnApagar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.rbPessoaFisica = new System.Windows.Forms.RadioButton();
 			this.rbPessoaJuridica = new System.Windows.Forms.RadioButton();
+			this.rbPessoaFisica = new System.Windows.Forms.RadioButton();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.txtCep = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
@@ -62,13 +62,13 @@
 			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.gbDocumentoPJuridica = new System.Windows.Forms.GroupBox();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
 			this.gbDocumentoPFisica = new System.Windows.Forms.GroupBox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.txtCPF = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
 			this.txtRG = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
@@ -107,17 +107,6 @@
 			this.kryptonGroup1.StateCommon.Border.Width = 2;
 			this.kryptonGroup1.TabIndex = 1;
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.clientes;
-			this.pictureBox1.Location = new System.Drawing.Point(6, 3);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(43, 53);
-			this.pictureBox1.TabIndex = 2;
-			this.pictureBox1.TabStop = false;
-			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -128,6 +117,17 @@
 			this.label1.Size = new System.Drawing.Size(211, 25);
 			this.label1.TabIndex = 3;
 			this.label1.Text = "Cadastro de Clientes";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.clientes;
+			this.pictureBox1.Location = new System.Drawing.Point(6, 3);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(43, 53);
+			this.pictureBox1.TabIndex = 2;
+			this.pictureBox1.TabStop = false;
 			// 
 			// txtNome
 			// 
@@ -178,7 +178,7 @@
 			this.txtCidade.StateCommon.Border.Width = 2;
 			this.txtCidade.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtCidade.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtCidade.TabIndex = 4;
+			this.txtCidade.TabIndex = 6;
 			// 
 			// txtObservacoes
 			// 
@@ -196,7 +196,7 @@
 			this.txtObservacoes.StateCommon.Border.Width = 2;
 			this.txtObservacoes.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtObservacoes.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtObservacoes.TabIndex = 5;
+			this.txtObservacoes.TabIndex = 13;
 			this.txtObservacoes.WordWrap = false;
 			// 
 			// txtEstado
@@ -214,7 +214,7 @@
 			this.txtEstado.StateCommon.Border.Width = 2;
 			this.txtEstado.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtEstado.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtEstado.TabIndex = 6;
+			this.txtEstado.TabIndex = 7;
 			// 
 			// txtEmail
 			// 
@@ -231,7 +231,7 @@
 			this.txtEmail.StateCommon.Border.Width = 2;
 			this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtEmail.TabIndex = 7;
+			this.txtEmail.TabIndex = 8;
 			// 
 			// txtIE
 			// 
@@ -265,7 +265,7 @@
 			this.txtBairro.StateCommon.Border.Width = 2;
 			this.txtBairro.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtBairro.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtBairro.TabIndex = 9;
+			this.txtBairro.TabIndex = 4;
 			// 
 			// dtpNascimento
 			// 
@@ -281,7 +281,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.dtpNascimento.StateCommon.Border.Rounding = 10;
 			this.dtpNascimento.StateCommon.Border.Width = 2;
-			this.dtpNascimento.TabIndex = 36;
+			this.dtpNascimento.TabIndex = 10;
 			// 
 			// dtpDataCadastro
 			// 
@@ -297,7 +297,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.dtpDataCadastro.StateCommon.Border.Rounding = 10;
 			this.dtpDataCadastro.StateCommon.Border.Width = 2;
-			this.dtpDataCadastro.TabIndex = 37;
+			this.dtpDataCadastro.TabIndex = 9;
 			// 
 			// txtCNPJ
 			// 
@@ -372,7 +372,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnExcluir.StateTracking.Border.Rounding = 5;
 			this.btnExcluir.StateTracking.Border.Width = 1;
-			this.btnExcluir.TabIndex = 57;
+			this.btnExcluir.TabIndex = 15;
 			this.btnExcluir.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.perto;
 			this.btnExcluir.Values.Text = "";
 			// 
@@ -443,7 +443,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnSalvar.StateTracking.Border.Rounding = 5;
 			this.btnSalvar.StateTracking.Border.Width = 1;
-			this.btnSalvar.TabIndex = 54;
+			this.btnSalvar.TabIndex = 14;
 			this.btnSalvar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.salvar;
 			this.btnSalvar.Values.Text = "";
 			// 
@@ -489,7 +489,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnApagar.StateTracking.Border.Rounding = 5;
 			this.btnApagar.StateTracking.Border.Width = 1;
-			this.btnApagar.TabIndex = 53;
+			this.btnApagar.TabIndex = 16;
 			this.btnApagar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.borracha__1_;
 			this.btnApagar.Values.Text = "";
 			// 
@@ -505,17 +505,6 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Escolha o tipo de pessoa";
 			// 
-			// rbPessoaFisica
-			// 
-			this.rbPessoaFisica.AutoSize = true;
-			this.rbPessoaFisica.Location = new System.Drawing.Point(59, 39);
-			this.rbPessoaFisica.Name = "rbPessoaFisica";
-			this.rbPessoaFisica.Size = new System.Drawing.Size(114, 19);
-			this.rbPessoaFisica.TabIndex = 0;
-			this.rbPessoaFisica.TabStop = true;
-			this.rbPessoaFisica.Text = "Pessoa Fisica";
-			this.rbPessoaFisica.UseVisualStyleBackColor = true;
-			// 
 			// rbPessoaJuridica
 			// 
 			this.rbPessoaJuridica.AutoSize = true;
@@ -526,6 +515,17 @@
 			this.rbPessoaJuridica.TabStop = true;
 			this.rbPessoaJuridica.Text = "Pessoa Juridica";
 			this.rbPessoaJuridica.UseVisualStyleBackColor = true;
+			// 
+			// rbPessoaFisica
+			// 
+			this.rbPessoaFisica.AutoSize = true;
+			this.rbPessoaFisica.Location = new System.Drawing.Point(59, 39);
+			this.rbPessoaFisica.Name = "rbPessoaFisica";
+			this.rbPessoaFisica.Size = new System.Drawing.Size(114, 19);
+			this.rbPessoaFisica.TabIndex = 0;
+			this.rbPessoaFisica.TabStop = true;
+			this.rbPessoaFisica.Text = "Pessoa Fisica";
+			this.rbPessoaFisica.UseVisualStyleBackColor = true;
 			// 
 			// label2
 			// 
@@ -563,7 +563,7 @@
 			this.txtCep.StateCommon.Border.Width = 2;
 			this.txtCep.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtCep.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtCep.TabIndex = 62;
+			this.txtCep.TabIndex = 5;
 			this.txtCep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
 			// label4
@@ -652,26 +652,6 @@
 			this.gbDocumentoPJuridica.Text = "Documentos";
 			this.gbDocumentoPJuridica.Visible = false;
 			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.label11.Location = new System.Drawing.Point(12, 71);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(46, 15);
-			this.label11.TabIndex = 71;
-			this.label11.Text = "CNPJ:";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.label12.Location = new System.Drawing.Point(22, 31);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(24, 15);
-			this.label12.TabIndex = 72;
-			this.label12.Text = "IE:";
-			// 
 			// gbDocumentoPFisica
 			// 
 			this.gbDocumentoPFisica.Controls.Add(this.label16);
@@ -743,6 +723,26 @@
 			this.txtRG.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
 			this.txtRG.TabIndex = 8;
 			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.label12.Location = new System.Drawing.Point(22, 31);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(24, 15);
+			this.label12.TabIndex = 72;
+			this.label12.Text = "IE:";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.label11.Location = new System.Drawing.Point(12, 71);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(46, 15);
+			this.label11.TabIndex = 71;
+			this.label11.Text = "CNPJ:";
+			// 
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.label18);
@@ -793,7 +793,7 @@
 			this.txtTelefone2.StateCommon.Border.Width = 2;
 			this.txtTelefone2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtTelefone2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtTelefone2.TabIndex = 50;
+			this.txtTelefone2.TabIndex = 12;
 			this.txtTelefone2.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
 			// txtTelefone1
@@ -812,7 +812,7 @@
 			this.txtTelefone1.StateCommon.Border.Width = 2;
 			this.txtTelefone1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtTelefone1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtTelefone1.TabIndex = 49;
+			this.txtTelefone1.TabIndex = 11;
 			this.txtTelefone1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
 			// label20

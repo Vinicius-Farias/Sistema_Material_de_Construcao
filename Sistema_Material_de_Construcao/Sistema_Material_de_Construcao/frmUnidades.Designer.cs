@@ -29,6 +29,11 @@
 		private void InitializeComponent()
 		{
 			this.dgvUnidade = new System.Windows.Forms.DataGridView();
+			this.Id_Unidade_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Nome_Unidade_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Descricao_Unidade_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
+			this.btnExclui = new System.Windows.Forms.DataGridViewImageColumn();
 			this.label15 = new System.Windows.Forms.Label();
 			this.btnExcluir = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.label14 = new System.Windows.Forms.Label();
@@ -39,11 +44,6 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtDescricao = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.txtNome = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-			this.Id_Unidade_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Nome_Unidade_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Descricao_Unidade_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
-			this.btnExclui = new System.Windows.Forms.DataGridViewImageColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUnidade)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -68,6 +68,46 @@
 			this.dgvUnidade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvUnidade.Size = new System.Drawing.Size(636, 221);
 			this.dgvUnidade.TabIndex = 80;
+			// 
+			// Id_Unidade_Produtos
+			// 
+			this.Id_Unidade_Produtos.DataPropertyName = "Id_Unidade_Produtos";
+			this.Id_Unidade_Produtos.HeaderText = "Id_Unidade_Produtos";
+			this.Id_Unidade_Produtos.Name = "Id_Unidade_Produtos";
+			this.Id_Unidade_Produtos.ReadOnly = true;
+			this.Id_Unidade_Produtos.Visible = false;
+			// 
+			// Nome_Unidade_Produtos
+			// 
+			this.Nome_Unidade_Produtos.DataPropertyName = "Nome_Unidade_Produtos";
+			this.Nome_Unidade_Produtos.HeaderText = "Nome";
+			this.Nome_Unidade_Produtos.Name = "Nome_Unidade_Produtos";
+			this.Nome_Unidade_Produtos.ReadOnly = true;
+			this.Nome_Unidade_Produtos.Width = 250;
+			// 
+			// Descricao_Unidade_Produtos
+			// 
+			this.Descricao_Unidade_Produtos.DataPropertyName = "Descricao_Unidade_Produtos";
+			this.Descricao_Unidade_Produtos.HeaderText = "Descrição";
+			this.Descricao_Unidade_Produtos.Name = "Descricao_Unidade_Produtos";
+			this.Descricao_Unidade_Produtos.ReadOnly = true;
+			this.Descricao_Unidade_Produtos.Width = 300;
+			// 
+			// btnEditar
+			// 
+			this.btnEditar.HeaderText = "";
+			this.btnEditar.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
+			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.ReadOnly = true;
+			this.btnEditar.Width = 30;
+			// 
+			// btnExclui
+			// 
+			this.btnExclui.HeaderText = "";
+			this.btnExclui.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
+			this.btnExclui.Name = "btnExclui";
+			this.btnExclui.ReadOnly = true;
+			this.btnExclui.Width = 30;
 			// 
 			// label15
 			// 
@@ -123,7 +163,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnExcluir.StateTracking.Border.Rounding = 5;
 			this.btnExcluir.StateTracking.Border.Width = 1;
-			this.btnExcluir.TabIndex = 78;
+			this.btnExcluir.TabIndex = 3;
 			this.btnExcluir.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.perto;
 			this.btnExcluir.Values.Text = "";
 			// 
@@ -194,7 +234,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnSalvar.StateTracking.Border.Rounding = 5;
 			this.btnSalvar.StateTracking.Border.Width = 1;
-			this.btnSalvar.TabIndex = 75;
+			this.btnSalvar.TabIndex = 2;
 			this.btnSalvar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.salvar;
 			this.btnSalvar.Values.Text = "";
 			// 
@@ -240,7 +280,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnApagar.StateTracking.Border.Rounding = 5;
 			this.btnApagar.StateTracking.Border.Width = 1;
-			this.btnApagar.TabIndex = 74;
+			this.btnApagar.TabIndex = 4;
 			this.btnApagar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.borracha__1_;
 			this.btnApagar.Values.Text = "";
 			// 
@@ -280,7 +320,7 @@
 			this.txtDescricao.StateCommon.Border.Width = 2;
 			this.txtDescricao.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtDescricao.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtDescricao.TabIndex = 71;
+			this.txtDescricao.TabIndex = 1;
 			this.txtDescricao.WordWrap = false;
 			// 
 			// txtNome
@@ -298,47 +338,7 @@
 			this.txtNome.StateCommon.Border.Width = 2;
 			this.txtNome.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtNome.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtNome.TabIndex = 70;
-			// 
-			// Id_Unidade_Produtos
-			// 
-			this.Id_Unidade_Produtos.DataPropertyName = "Id_Unidade_Produtos";
-			this.Id_Unidade_Produtos.HeaderText = "Id_Unidade_Produtos";
-			this.Id_Unidade_Produtos.Name = "Id_Unidade_Produtos";
-			this.Id_Unidade_Produtos.ReadOnly = true;
-			this.Id_Unidade_Produtos.Visible = false;
-			// 
-			// Nome_Unidade_Produtos
-			// 
-			this.Nome_Unidade_Produtos.DataPropertyName = "Nome_Unidade_Produtos";
-			this.Nome_Unidade_Produtos.HeaderText = "Nome";
-			this.Nome_Unidade_Produtos.Name = "Nome_Unidade_Produtos";
-			this.Nome_Unidade_Produtos.ReadOnly = true;
-			this.Nome_Unidade_Produtos.Width = 250;
-			// 
-			// Descricao_Unidade_Produtos
-			// 
-			this.Descricao_Unidade_Produtos.DataPropertyName = "Descricao_Unidade_Produtos";
-			this.Descricao_Unidade_Produtos.HeaderText = "Descrição";
-			this.Descricao_Unidade_Produtos.Name = "Descricao_Unidade_Produtos";
-			this.Descricao_Unidade_Produtos.ReadOnly = true;
-			this.Descricao_Unidade_Produtos.Width = 300;
-			// 
-			// btnEditar
-			// 
-			this.btnEditar.HeaderText = "";
-			this.btnEditar.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
-			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.ReadOnly = true;
-			this.btnEditar.Width = 30;
-			// 
-			// btnExclui
-			// 
-			this.btnExclui.HeaderText = "";
-			this.btnExclui.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
-			this.btnExclui.Name = "btnExclui";
-			this.btnExclui.ReadOnly = true;
-			this.btnExclui.Width = 30;
+			this.txtNome.TabIndex = 0;
 			// 
 			// frmUnidades
 			// 

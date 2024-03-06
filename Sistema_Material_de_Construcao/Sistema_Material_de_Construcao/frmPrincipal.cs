@@ -25,9 +25,7 @@ namespace Sistema_Material_de_Construcao
 		public frmPrincipal()
 		{
 			InitializeComponent();
-			TelaInicio();
-
-			FrmListaProdutos = new frmListaProdutos(this);
+			ChamaListaProdutos();
 		}
 		bool menuExpand = false;
 
@@ -87,7 +85,7 @@ namespace Sistema_Material_de_Construcao
 		{
 			if (FrmListarCliente == null)
 			{
-				FrmListarCliente = new frmListarCliente();
+				FrmListarCliente = new frmListarCliente(this);
 				FrmListarCliente.FormClosed += FrmListarCliente_FormClosed;
 				FrmListarCliente.MdiParent = this;
 				FrmListarCliente.TopLevel = false;
@@ -110,7 +108,7 @@ namespace Sistema_Material_de_Construcao
 
 			if (FrmListarFuncionarios == null)
 			{
-				FrmListarFuncionarios = new frmListarFuncionarios();
+				FrmListarFuncionarios = new frmListarFuncionarios(this);
 				FrmListarFuncionarios.FormClosed += FrmListarFuncionarios_FormClosed;
 				FrmListarFuncionarios.MdiParent = this;
 				FrmListarFuncionarios.TopLevel = false;
@@ -127,7 +125,7 @@ namespace Sistema_Material_de_Construcao
 			FrmListarFuncionarios = null;
 		}
 
-		private void TelaInicio()
+		public void ChamaListaProdutos()
 		{
 			if (FrmListaProdutos == null)
 			{
@@ -160,7 +158,7 @@ namespace Sistema_Material_de_Construcao
 
 		private void btnInicio_Click(object sender, EventArgs e)
 		{
-			TelaInicio();
+			ChamaListaProdutos();
 		}
 
 		private void btnProdutos_Click(object sender, EventArgs e)

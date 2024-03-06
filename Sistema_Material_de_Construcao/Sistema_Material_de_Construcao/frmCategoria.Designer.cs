@@ -39,13 +39,13 @@
 			this.btnSalvar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnApagar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.dgvCategoria = new System.Windows.Forms.DataGridView();
-			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.Id_Categoria_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nome_Categoria_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Descricao_Categoria_Produtos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExclui = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -64,7 +64,7 @@
 			this.txtNome.StateCommon.Border.Width = 2;
 			this.txtNome.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtNome.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtNome.TabIndex = 3;
+			this.txtNome.TabIndex = 1;
 			// 
 			// txtDescricao
 			// 
@@ -82,7 +82,7 @@
 			this.txtDescricao.StateCommon.Border.Width = 2;
 			this.txtDescricao.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtDescricao.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtDescricao.TabIndex = 4;
+			this.txtDescricao.TabIndex = 2;
 			this.txtDescricao.WordWrap = false;
 			// 
 			// label2
@@ -159,7 +159,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnExcluir.StateTracking.Border.Rounding = 5;
 			this.btnExcluir.StateTracking.Border.Width = 1;
-			this.btnExcluir.TabIndex = 67;
+			this.btnExcluir.TabIndex = 4;
 			this.btnExcluir.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.perto;
 			this.btnExcluir.Values.Text = "";
 			// 
@@ -230,7 +230,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnSalvar.StateTracking.Border.Rounding = 5;
 			this.btnSalvar.StateTracking.Border.Width = 1;
-			this.btnSalvar.TabIndex = 64;
+			this.btnSalvar.TabIndex = 3;
 			this.btnSalvar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.salvar;
 			this.btnSalvar.Values.Text = "";
 			// 
@@ -276,7 +276,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnApagar.StateTracking.Border.Rounding = 5;
 			this.btnApagar.StateTracking.Border.Width = 1;
-			this.btnApagar.TabIndex = 63;
+			this.btnApagar.TabIndex = 5;
 			this.btnApagar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.borracha__1_;
 			this.btnApagar.Values.Text = "";
 			// 
@@ -300,21 +300,7 @@
 			this.dgvCategoria.RowHeadersVisible = false;
 			this.dgvCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvCategoria.Size = new System.Drawing.Size(636, 221);
-			this.dgvCategoria.TabIndex = 69;
-			// 
-			// dataGridViewImageColumn1
-			// 
-			this.dataGridViewImageColumn1.HeaderText = "";
-			this.dataGridViewImageColumn1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
-			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-			this.dataGridViewImageColumn1.Width = 30;
-			// 
-			// dataGridViewImageColumn2
-			// 
-			this.dataGridViewImageColumn2.HeaderText = "";
-			this.dataGridViewImageColumn2.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
-			this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-			this.dataGridViewImageColumn2.Width = 30;
+			this.dgvCategoria.TabIndex = 6;
 			// 
 			// Id_Categoria_Produtos
 			// 
@@ -355,6 +341,20 @@
 			this.btnExclui.Name = "btnExclui";
 			this.btnExclui.ReadOnly = true;
 			this.btnExclui.Width = 30;
+			// 
+			// dataGridViewImageColumn1
+			// 
+			this.dataGridViewImageColumn1.HeaderText = "";
+			this.dataGridViewImageColumn1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.editar;
+			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+			this.dataGridViewImageColumn1.Width = 30;
+			// 
+			// dataGridViewImageColumn2
+			// 
+			this.dataGridViewImageColumn2.HeaderText = "";
+			this.dataGridViewImageColumn2.Image = global::Sistema_Material_de_Construcao.Properties.Resources.excluir;
+			this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+			this.dataGridViewImageColumn2.Width = 30;
 			// 
 			// frmCategoria
 			// 

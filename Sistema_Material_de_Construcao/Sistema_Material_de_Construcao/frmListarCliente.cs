@@ -13,9 +13,23 @@ namespace Sistema_Material_de_Construcao
 {
 	public partial class frmListarCliente : KryptonForm
 	{
-		public frmListarCliente()
+		frmPrincipal FrmPrincipal;
+		public frmListarCliente(frmPrincipal frmPrincipal)
 		{
 			InitializeComponent();
+			this.FrmPrincipal = frmPrincipal;
+		}
+
+		private void btnListaFuncionario_Click(object sender, EventArgs e)
+		{
+			FrmPrincipal.ChamaListaFuncionario();
+			this.Close();
+		}
+
+		private void btnListarProdutos_Click(object sender, EventArgs e)
+		{
+			FrmPrincipal.ChamaListaProdutos();
+			this.Close();
 		}
 	}
 }

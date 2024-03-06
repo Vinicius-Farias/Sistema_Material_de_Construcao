@@ -13,11 +13,29 @@ namespace Sistema_Material_de_Construcao
 {
 	public partial class frmListarFuncionarios : KryptonForm
 	{
-		public frmListarFuncionarios()
+		frmPrincipal FrmPrincipal;
+		public frmListarFuncionarios(frmPrincipal frmPrincipal)
 		{
 			InitializeComponent();
 			this.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
+			this.FrmPrincipal = frmPrincipal;
 		}
 
+		private void btnBusca_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnListarProdutos_Click(object sender, EventArgs e)
+		{
+			FrmPrincipal.ChamaListaProdutos();
+			this.Close();
+		}
+
+		private void btnListaCliente_Click(object sender, EventArgs e)
+		{
+			FrmPrincipal.ChamaListaCliente();
+			this.Close();
+		}
 	}
 }

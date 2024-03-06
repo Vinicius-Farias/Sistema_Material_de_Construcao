@@ -29,16 +29,13 @@
 		private void InitializeComponent()
 		{
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnListaFuncionario = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnListarProdutos = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnBusca = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.txtPesquisar = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.dgvClientes = new System.Windows.Forms.DataGridView();
-			this.rbNome = new System.Windows.Forms.RadioButton();
-			this.rbCPF = new System.Windows.Forms.RadioButton();
-			this.rbCNPJ = new System.Windows.Forms.RadioButton();
 			this.Id_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nome_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Endereco_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +51,9 @@
 			this.Observacoes_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
+			this.rbNome = new System.Windows.Forms.RadioButton();
+			this.rbCPF = new System.Windows.Forms.RadioButton();
+			this.rbCNPJ = new System.Windows.Forms.RadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
@@ -81,16 +81,6 @@
 			this.kryptonGroup1.StateCommon.Border.Width = 2;
 			this.kryptonGroup1.TabIndex = 0;
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.clientes;
-			this.pictureBox1.Location = new System.Drawing.Point(11, 9);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(37, 43);
-			this.pictureBox1.TabIndex = 2;
-			this.pictureBox1.TabStop = false;
-			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -101,6 +91,16 @@
 			this.label1.Size = new System.Drawing.Size(153, 25);
 			this.label1.TabIndex = 3;
 			this.label1.Text = "Listar Clientes";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pictureBox1.Image = global::Sistema_Material_de_Construcao.Properties.Resources.clientes;
+			this.pictureBox1.Location = new System.Drawing.Point(11, 9);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(37, 43);
+			this.pictureBox1.TabIndex = 2;
+			this.pictureBox1.TabStop = false;
 			// 
 			// btnListaFuncionario
 			// 
@@ -150,9 +150,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnListaFuncionario.StateTracking.Border.Rounding = 5;
 			this.btnListaFuncionario.StateTracking.Border.Width = 1;
-			this.btnListaFuncionario.TabIndex = 2;
+			this.btnListaFuncionario.TabIndex = 5;
 			this.btnListaFuncionario.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.funcionario_homem_alt;
 			this.btnListaFuncionario.Values.Text = " Listar Funcionários";
+			this.btnListaFuncionario.Click += new System.EventHandler(this.btnListaFuncionario_Click);
 			// 
 			// btnListarProdutos
 			// 
@@ -202,9 +203,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnListarProdutos.StateTracking.Border.Rounding = 5;
 			this.btnListarProdutos.StateTracking.Border.Width = 1;
-			this.btnListarProdutos.TabIndex = 12;
+			this.btnListarProdutos.TabIndex = 6;
 			this.btnListarProdutos.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.caixa_aberta__1_;
 			this.btnListarProdutos.Values.Text = " Listar Produtos";
+			this.btnListarProdutos.Click += new System.EventHandler(this.btnListarProdutos_Click);
 			// 
 			// btnBusca
 			// 
@@ -254,7 +256,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnBusca.StateTracking.Border.Rounding = 5;
 			this.btnBusca.StateTracking.Border.Width = 1;
-			this.btnBusca.TabIndex = 14;
+			this.btnBusca.TabIndex = 4;
 			this.btnBusca.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.procurar__1_;
 			this.btnBusca.Values.Text = "";
 			// 
@@ -272,7 +274,7 @@
 			this.txtPesquisar.StateCommon.Border.Rounding = 5;
 			this.txtPesquisar.StateCommon.Border.Width = 1;
 			this.txtPesquisar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-			this.txtPesquisar.TabIndex = 13;
+			this.txtPesquisar.TabIndex = 0;
 			// 
 			// dgvClientes
 			// 
@@ -308,49 +310,7 @@
 			this.dgvClientes.RowHeadersVisible = false;
 			this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvClientes.Size = new System.Drawing.Size(1140, 446);
-			this.dgvClientes.TabIndex = 15;
-			// 
-			// rbNome
-			// 
-			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbNome.AutoSize = true;
-			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbNome.ForeColor = System.Drawing.Color.White;
-			this.rbNome.Location = new System.Drawing.Point(579, 86);
-			this.rbNome.Name = "rbNome";
-			this.rbNome.Size = new System.Drawing.Size(66, 21);
-			this.rbNome.TabIndex = 16;
-			this.rbNome.TabStop = true;
-			this.rbNome.Text = "Nome";
-			this.rbNome.UseVisualStyleBackColor = true;
-			// 
-			// rbCPF
-			// 
-			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbCPF.AutoSize = true;
-			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbCPF.ForeColor = System.Drawing.Color.White;
-			this.rbCPF.Location = new System.Drawing.Point(651, 86);
-			this.rbCPF.Name = "rbCPF";
-			this.rbCPF.Size = new System.Drawing.Size(52, 21);
-			this.rbCPF.TabIndex = 17;
-			this.rbCPF.TabStop = true;
-			this.rbCPF.Text = "CPF";
-			this.rbCPF.UseVisualStyleBackColor = true;
-			// 
-			// rbCNPJ
-			// 
-			this.rbCNPJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbCNPJ.AutoSize = true;
-			this.rbCNPJ.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbCNPJ.ForeColor = System.Drawing.Color.White;
-			this.rbCNPJ.Location = new System.Drawing.Point(710, 86);
-			this.rbCNPJ.Name = "rbCNPJ";
-			this.rbCNPJ.Size = new System.Drawing.Size(59, 21);
-			this.rbCNPJ.TabIndex = 18;
-			this.rbCNPJ.TabStop = true;
-			this.rbCNPJ.Text = "CNPJ";
-			this.rbCNPJ.UseVisualStyleBackColor = true;
+			this.dgvClientes.TabIndex = 7;
 			// 
 			// Id_Cliente
 			// 
@@ -467,6 +427,48 @@
 			this.btnExcluir.Name = "btnExcluir";
 			this.btnExcluir.ReadOnly = true;
 			this.btnExcluir.Width = 30;
+			// 
+			// rbNome
+			// 
+			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbNome.AutoSize = true;
+			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbNome.ForeColor = System.Drawing.Color.White;
+			this.rbNome.Location = new System.Drawing.Point(579, 86);
+			this.rbNome.Name = "rbNome";
+			this.rbNome.Size = new System.Drawing.Size(66, 21);
+			this.rbNome.TabIndex = 1;
+			this.rbNome.TabStop = true;
+			this.rbNome.Text = "Nome";
+			this.rbNome.UseVisualStyleBackColor = true;
+			// 
+			// rbCPF
+			// 
+			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbCPF.AutoSize = true;
+			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbCPF.ForeColor = System.Drawing.Color.White;
+			this.rbCPF.Location = new System.Drawing.Point(651, 86);
+			this.rbCPF.Name = "rbCPF";
+			this.rbCPF.Size = new System.Drawing.Size(52, 21);
+			this.rbCPF.TabIndex = 2;
+			this.rbCPF.TabStop = true;
+			this.rbCPF.Text = "CPF";
+			this.rbCPF.UseVisualStyleBackColor = true;
+			// 
+			// rbCNPJ
+			// 
+			this.rbCNPJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbCNPJ.AutoSize = true;
+			this.rbCNPJ.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbCNPJ.ForeColor = System.Drawing.Color.White;
+			this.rbCNPJ.Location = new System.Drawing.Point(710, 86);
+			this.rbCNPJ.Name = "rbCNPJ";
+			this.rbCNPJ.Size = new System.Drawing.Size(59, 21);
+			this.rbCNPJ.TabIndex = 3;
+			this.rbCNPJ.TabStop = true;
+			this.rbCNPJ.Text = "CNPJ";
+			this.rbCNPJ.UseVisualStyleBackColor = true;
 			// 
 			// frmListarCliente
 			// 

@@ -135,7 +135,7 @@
 			this.txtMargem.StateCommon.Border.Rounding = 10;
 			this.txtMargem.StateCommon.Border.Width = 2;
 			this.txtMargem.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtMargem.TabIndex = 10;
+			this.txtMargem.TabIndex = 7;
 			// 
 			// txtVenda
 			// 
@@ -152,7 +152,7 @@
 			this.txtVenda.StateCommon.Border.Rounding = 10;
 			this.txtVenda.StateCommon.Border.Width = 2;
 			this.txtVenda.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtVenda.TabIndex = 3;
+			this.txtVenda.TabIndex = 6;
 			// 
 			// txtCusto
 			// 
@@ -169,7 +169,7 @@
 			this.txtCusto.StateCommon.Border.Rounding = 10;
 			this.txtCusto.StateCommon.Border.Width = 2;
 			this.txtCusto.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtCusto.TabIndex = 2;
+			this.txtCusto.TabIndex = 5;
 			// 
 			// label7
 			// 
@@ -201,7 +201,7 @@
 			this.cbUnidade.StateCommon.ComboBox.Border.Rounding = 10;
 			this.cbUnidade.StateCommon.ComboBox.Border.Width = 2;
 			this.cbUnidade.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.DimGray;
-			this.cbUnidade.TabIndex = 0;
+			this.cbUnidade.TabIndex = 11;
 			// 
 			// cbCategoria
 			// 
@@ -241,7 +241,7 @@
 			this.txtEstoqueMinimo.StateCommon.Border.Rounding = 10;
 			this.txtEstoqueMinimo.StateCommon.Border.Width = 2;
 			this.txtEstoqueMinimo.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtEstoqueMinimo.TabIndex = 3;
+			this.txtEstoqueMinimo.TabIndex = 10;
 			// 
 			// txtEstoqueAtual
 			// 
@@ -258,7 +258,7 @@
 			this.txtEstoqueAtual.StateCommon.Border.Rounding = 10;
 			this.txtEstoqueAtual.StateCommon.Border.Width = 2;
 			this.txtEstoqueAtual.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtEstoqueAtual.TabIndex = 2;
+			this.txtEstoqueAtual.TabIndex = 9;
 			// 
 			// label6
 			// 
@@ -325,7 +325,7 @@
 			this.ckStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.ckStatus.Name = "ckStatus";
 			this.ckStatus.Size = new System.Drawing.Size(56, 19);
-			this.ckStatus.TabIndex = 0;
+			this.ckStatus.TabIndex = 8;
 			this.ckStatus.Text = "Ativo";
 			this.ckStatus.UseVisualStyleBackColor = true;
 			// 
@@ -344,7 +344,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.dtpDataCadastro.StateCommon.Border.Rounding = 10;
 			this.dtpDataCadastro.StateCommon.Border.Width = 2;
-			this.dtpDataCadastro.TabIndex = 5;
+			this.dtpDataCadastro.TabIndex = 4;
 			// 
 			// label4
 			// 
@@ -436,7 +436,7 @@
 			this.txtAnotacoes.StateCommon.Border.Rounding = 10;
 			this.txtAnotacoes.StateCommon.Border.Width = 2;
 			this.txtAnotacoes.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtAnotacoes.TabIndex = 1;
+			this.txtAnotacoes.TabIndex = 12;
 			// 
 			// label8
 			// 
@@ -545,7 +545,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnApagar.StateTracking.Border.Rounding = 5;
 			this.btnApagar.StateTracking.Border.Width = 1;
-			this.btnApagar.TabIndex = 16;
+			this.btnApagar.TabIndex = 15;
 			this.btnApagar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.borracha__1_;
 			this.btnApagar.Values.Text = "";
 			// 
@@ -590,7 +590,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnSalvar.StateTracking.Border.Rounding = 5;
 			this.btnSalvar.StateTracking.Border.Width = 1;
-			this.btnSalvar.TabIndex = 17;
+			this.btnSalvar.TabIndex = 13;
 			this.btnSalvar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.salvar;
 			this.btnSalvar.Values.Text = "";
 			// 
@@ -661,7 +661,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnExcluir.StateTracking.Border.Rounding = 5;
 			this.btnExcluir.StateTracking.Border.Width = 1;
-			this.btnExcluir.TabIndex = 20;
+			this.btnExcluir.TabIndex = 14;
 			this.btnExcluir.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.perto;
 			this.btnExcluir.Values.Text = "";
 			// 

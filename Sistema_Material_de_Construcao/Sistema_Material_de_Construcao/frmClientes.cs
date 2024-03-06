@@ -18,5 +18,7 @@ namespace Sistema_Material_de_Construcao
 			InitializeComponent();
 			this.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
 		}
+
+		
 	}
 }

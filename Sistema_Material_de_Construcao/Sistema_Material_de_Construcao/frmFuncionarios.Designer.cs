@@ -54,16 +54,16 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.txtRg = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-			this.txtCpf = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-			this.label10 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
-			this.txtObservacoes = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-			this.txtTelefone1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-			this.txtTelefone2 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-			this.label12 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.txtCpf = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+			this.txtRg = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.label16 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.txtTelefone2 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+			this.txtTelefone1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+			this.txtObservacoes = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.label17 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
@@ -89,7 +89,7 @@
 			this.txtNome.StateCommon.Border.Width = 2;
 			this.txtNome.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtNome.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtNome.TabIndex = 1;
+			this.txtNome.TabIndex = 0;
 			// 
 			// label15
 			// 
@@ -101,7 +101,7 @@
 			this.label15.Location = new System.Drawing.Point(150, 106);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(51, 15);
-			this.label15.TabIndex = 27;
+			this.label15.TabIndex = 14;
 			this.label15.Text = "Excluir";
 			// 
 			// btnExcluir
@@ -216,7 +216,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnSalvar.StateTracking.Border.Rounding = 5;
 			this.btnSalvar.StateTracking.Border.Width = 1;
-			this.btnSalvar.TabIndex = 23;
+			this.btnSalvar.TabIndex = 13;
 			this.btnSalvar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.salvar;
 			this.btnSalvar.Values.Text = "";
 			// 
@@ -262,7 +262,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.btnApagar.StateTracking.Border.Rounding = 5;
 			this.btnApagar.StateTracking.Border.Width = 1;
-			this.btnApagar.TabIndex = 22;
+			this.btnApagar.TabIndex = 15;
 			this.btnApagar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.borracha__1_;
 			this.btnApagar.Values.Text = "";
 			// 
@@ -323,7 +323,7 @@
 			this.txtBairro.StateCommon.Border.Width = 2;
 			this.txtBairro.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtBairro.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtBairro.TabIndex = 29;
+			this.txtBairro.TabIndex = 2;
 			// 
 			// txtEndereco
 			// 
@@ -340,7 +340,7 @@
 			this.txtEndereco.StateCommon.Border.Width = 2;
 			this.txtEndereco.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtEndereco.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtEndereco.TabIndex = 30;
+			this.txtEndereco.TabIndex = 1;
 			// 
 			// txtCidade
 			// 
@@ -357,7 +357,7 @@
 			this.txtCidade.StateCommon.Border.Width = 2;
 			this.txtCidade.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtCidade.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtCidade.TabIndex = 31;
+			this.txtCidade.TabIndex = 4;
 			this.txtCidade.TextChanged += new System.EventHandler(this.kryptonTextBox3_TextChanged);
 			// 
 			// txtEmail
@@ -375,7 +375,7 @@
 			this.txtEmail.StateCommon.Border.Width = 2;
 			this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtEmail.TabIndex = 32;
+			this.txtEmail.TabIndex = 5;
 			// 
 			// dtpDataCadastro
 			// 
@@ -391,7 +391,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.dtpDataCadastro.StateCommon.Border.Rounding = 10;
 			this.dtpDataCadastro.StateCommon.Border.Width = 2;
-			this.dtpDataCadastro.TabIndex = 34;
+			this.dtpDataCadastro.TabIndex = 7;
 			// 
 			// dtpNascimento
 			// 
@@ -407,7 +407,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
 			this.dtpNascimento.StateCommon.Border.Rounding = 10;
 			this.dtpNascimento.StateCommon.Border.Width = 2;
-			this.dtpNascimento.TabIndex = 35;
+			this.dtpNascimento.TabIndex = 6;
 			// 
 			// txtCep
 			// 
@@ -425,7 +425,7 @@
 			this.txtCep.StateCommon.Border.Width = 2;
 			this.txtCep.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtCep.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtCep.TabIndex = 36;
+			this.txtCep.TabIndex = 3;
 			this.txtCep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
 			// label2
@@ -523,37 +523,25 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Documentos";
 			// 
-			// groupBox2
+			// label11
 			// 
-			this.groupBox2.Controls.Add(this.label16);
-			this.groupBox2.Controls.Add(this.label12);
-			this.groupBox2.Controls.Add(this.txtTelefone2);
-			this.groupBox2.Controls.Add(this.txtTelefone1);
-			this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.groupBox2.Location = new System.Drawing.Point(706, 343);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(244, 103);
-			this.groupBox2.TabIndex = 46;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Contato";
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.label11.Location = new System.Drawing.Point(13, 71);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(37, 15);
+			this.label11.TabIndex = 47;
+			this.label11.Text = "CPF:";
 			// 
-			// txtRg
+			// label10
 			// 
-			this.txtRg.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.txtRg.Location = new System.Drawing.Point(51, 21);
-			this.txtRg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.txtRg.Name = "txtRg";
-			this.txtRg.Size = new System.Drawing.Size(175, 29);
-			this.txtRg.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
-			this.txtRg.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
-			this.txtRg.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.txtRg.StateCommon.Border.Rounding = 10;
-			this.txtRg.StateCommon.Border.Width = 2;
-			this.txtRg.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtRg.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtRg.TabIndex = 47;
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.label10.Location = new System.Drawing.Point(16, 30);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(31, 15);
+			this.label10.TabIndex = 47;
+			this.label10.Text = "RG:";
 			// 
 			// txtCpf
 			// 
@@ -571,66 +559,60 @@
 			this.txtCpf.StateCommon.Border.Width = 2;
 			this.txtCpf.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtCpf.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtCpf.TabIndex = 48;
+			this.txtCpf.TabIndex = 10;
 			this.txtCpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
-			// label10
+			// txtRg
 			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.label10.Location = new System.Drawing.Point(16, 30);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(31, 15);
-			this.label10.TabIndex = 47;
-			this.label10.Text = "RG:";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.label11.Location = new System.Drawing.Point(13, 71);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(37, 15);
-			this.label11.TabIndex = 47;
-			this.label11.Text = "CPF:";
-			// 
-			// txtObservacoes
-			// 
-			this.txtObservacoes.Location = new System.Drawing.Point(419, 486);
-			this.txtObservacoes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.txtObservacoes.Multiline = true;
-			this.txtObservacoes.Name = "txtObservacoes";
-			this.txtObservacoes.Size = new System.Drawing.Size(232, 83);
-			this.txtObservacoes.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
-			this.txtObservacoes.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
-			this.txtObservacoes.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+			this.txtRg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.txtRg.Location = new System.Drawing.Point(51, 21);
+			this.txtRg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.txtRg.Name = "txtRg";
+			this.txtRg.Size = new System.Drawing.Size(175, 29);
+			this.txtRg.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
+			this.txtRg.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
+			this.txtRg.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.txtObservacoes.StateCommon.Border.Rounding = 10;
-			this.txtObservacoes.StateCommon.Border.Width = 2;
-			this.txtObservacoes.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtObservacoes.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtObservacoes.TabIndex = 47;
-			this.txtObservacoes.WordWrap = false;
+			this.txtRg.StateCommon.Border.Rounding = 10;
+			this.txtRg.StateCommon.Border.Width = 2;
+			this.txtRg.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+			this.txtRg.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.txtRg.TabIndex = 9;
 			// 
-			// txtTelefone1
+			// groupBox2
 			// 
-			this.txtTelefone1.Location = new System.Drawing.Point(89, 19);
-			this.txtTelefone1.Mask = "(99) 00000-0000";
-			this.txtTelefone1.Name = "txtTelefone1";
-			this.txtTelefone1.Size = new System.Drawing.Size(137, 30);
-			this.txtTelefone1.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
-			this.txtTelefone1.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
-			this.txtTelefone1.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.txtTelefone1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-			this.txtTelefone1.StateCommon.Border.Rounding = 10;
-			this.txtTelefone1.StateCommon.Border.Width = 2;
-			this.txtTelefone1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-			this.txtTelefone1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtTelefone1.TabIndex = 49;
-			this.txtTelefone1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+			this.groupBox2.Controls.Add(this.label16);
+			this.groupBox2.Controls.Add(this.label12);
+			this.groupBox2.Controls.Add(this.txtTelefone2);
+			this.groupBox2.Controls.Add(this.txtTelefone1);
+			this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.groupBox2.Location = new System.Drawing.Point(706, 343);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(244, 103);
+			this.groupBox2.TabIndex = 46;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "Contato";
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.label16.Location = new System.Drawing.Point(9, 71);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(79, 15);
+			this.label16.TabIndex = 52;
+			this.label16.Text = "Telefone 2:";
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.label12.Location = new System.Drawing.Point(10, 27);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(79, 15);
+			this.label12.TabIndex = 51;
+			this.label12.Text = "Telefone 1:";
 			// 
 			// txtTelefone2
 			// 
@@ -648,28 +630,46 @@
 			this.txtTelefone2.StateCommon.Border.Width = 2;
 			this.txtTelefone2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtTelefone2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.txtTelefone2.TabIndex = 50;
+			this.txtTelefone2.TabIndex = 12;
 			this.txtTelefone2.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
-			// label12
+			// txtTelefone1
 			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.label12.Location = new System.Drawing.Point(10, 27);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(79, 15);
-			this.label12.TabIndex = 51;
-			this.label12.Text = "Telefone 1:";
+			this.txtTelefone1.Location = new System.Drawing.Point(89, 19);
+			this.txtTelefone1.Mask = "(99) 00000-0000";
+			this.txtTelefone1.Name = "txtTelefone1";
+			this.txtTelefone1.Size = new System.Drawing.Size(137, 30);
+			this.txtTelefone1.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
+			this.txtTelefone1.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
+			this.txtTelefone1.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.txtTelefone1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+			this.txtTelefone1.StateCommon.Border.Rounding = 10;
+			this.txtTelefone1.StateCommon.Border.Width = 2;
+			this.txtTelefone1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+			this.txtTelefone1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.txtTelefone1.TabIndex = 11;
+			this.txtTelefone1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
-			// label16
+			// txtObservacoes
 			// 
-			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.label16.Location = new System.Drawing.Point(9, 71);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(79, 15);
-			this.label16.TabIndex = 52;
-			this.label16.Text = "Telefone 2:";
+			this.txtObservacoes.Location = new System.Drawing.Point(419, 486);
+			this.txtObservacoes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.txtObservacoes.Multiline = true;
+			this.txtObservacoes.Name = "txtObservacoes";
+			this.txtObservacoes.Size = new System.Drawing.Size(232, 83);
+			this.txtObservacoes.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
+			this.txtObservacoes.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
+			this.txtObservacoes.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+			this.txtObservacoes.StateCommon.Border.Rounding = 10;
+			this.txtObservacoes.StateCommon.Border.Width = 2;
+			this.txtObservacoes.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+			this.txtObservacoes.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.txtObservacoes.TabIndex = 8;
+			this.txtObservacoes.WordWrap = false;
 			// 
 			// label17
 			// 
