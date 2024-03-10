@@ -22,7 +22,7 @@ namespace AcessoDados.FuncionarioBanco
 					conexao.Open();
 
 					sql.Append("INSERT INTO Funcionario (Nome_Funcionario, Endereco_Funcionario, Bairro_Funcionario, Cep_Funcionario, Cidade_Funcionario, ");
-					sql.Append("Email_Funcionario, Nascimento_Funcionario, Telefone1_Funcionario, Telefone2_Funcionario Rg_Funcionario, Cpf_Funcionario, ");
+					sql.Append("Email_Funcionario, Nascimento_Funcionario, Telefone1_Funcionario, Telefone2_Funcionario, Rg_Funcionario, Cpf_Funcionario, ");
 					sql.Append("Observacoes_Funcionario, Data_Cadastro_Funcionario) ");
 
 					sql.Append("VALUES (@nome, @endereco, @bairro, @cep, @cidade, @email, @nascimento, @telefone1, @telefone2, @rg, @cpf, @observacoes, @dataCadastro)");

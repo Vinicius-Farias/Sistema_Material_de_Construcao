@@ -219,6 +219,7 @@
 			this.btnSalvar.TabIndex = 13;
 			this.btnSalvar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.salvar;
 			this.btnSalvar.Values.Text = "";
+			this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
 			// 
 			// btnApagar
 			// 
@@ -358,7 +359,6 @@
 			this.txtCidade.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
 			this.txtCidade.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
 			this.txtCidade.TabIndex = 4;
-			this.txtCidade.TextChanged += new System.EventHandler(this.kryptonTextBox3_TextChanged);
 			// 
 			// txtEmail
 			// 
@@ -477,7 +477,6 @@
 			this.label6.Size = new System.Drawing.Size(52, 15);
 			this.label6.TabIndex = 41;
 			this.label6.Text = "Cidade";
-			this.label6.Click += new System.EventHandler(this.label6_Click);
 			// 
 			// label7
 			// 
@@ -717,7 +716,6 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "frmFuncionarios";
 			this.Text = "frmFuncionarios";
-			this.Load += new System.EventHandler(this.frmFuncionarios_Load);
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
 			this.kryptonGroup1.Panel.ResumeLayout(false);
 			this.kryptonGroup1.Panel.PerformLayout();

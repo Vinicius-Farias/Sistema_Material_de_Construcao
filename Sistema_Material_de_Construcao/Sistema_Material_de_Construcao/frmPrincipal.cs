@@ -21,15 +21,16 @@ namespace Sistema_Material_de_Construcao
 		private frmUnidades FrmUnidades;
 		private frmListarFuncionarios FrmListarFuncionarios;
 		private frmListarCliente FrmListarCliente;
-		
+
+		private Image menuFechado = Properties.Resources.aplicativos__1_;
+		private Image menuAberto = Properties.Resources.excluir_aplicativos__1_;
 		public frmPrincipal()
 		{
 			InitializeComponent();
 			ChamaListaProdutos();
 		}
-		bool menuExpand = false;
 
-		
+		bool menuExpand = false;
 
 		private void menuTransicao_Tick(object sender, EventArgs e)
 		{
@@ -40,6 +41,7 @@ namespace Sistema_Material_de_Construcao
 				{
 					menuTransicao.Stop();
 					menuExpand = true;
+					btnMenu.Values.Image = menuAberto;
 				}
 			}
 			else
@@ -49,6 +51,7 @@ namespace Sistema_Material_de_Construcao
 				{
 					menuTransicao.Stop();
 					menuExpand = false;
+					btnMenu.Values.Image =  menuFechado;
 				}
 			}
 			
