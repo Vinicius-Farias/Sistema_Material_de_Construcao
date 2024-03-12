@@ -57,7 +57,9 @@
     <Compile Include="ConectionBanco\Conexao.cs" />
     <Compile Include="FuncionarioBanco\DeleteFuncionario\DeleteFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\SelectFuncionario\PesquisarCpfFuncionarioAD.cs" />
+    <Compile Include="FuncionarioBanco\SelectFuncionario\PesquisarIDFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\SelectFuncionario\PesquisarNomeFuncionarioAD.cs" />
+    <Compile Include="FuncionarioBanco\SelectFuncionario\PesquisarRGFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\SelectFuncionario\SelectFuncionarioAD.cs" />
     <Compile Include="FuncionarioBanco\UpdateFuncionario\UpdateFuncionarioAD.cs" />
     <Compile Include="CategoriaBanco\DeleteCategoria\DeleteCategoriaAD.cs" />

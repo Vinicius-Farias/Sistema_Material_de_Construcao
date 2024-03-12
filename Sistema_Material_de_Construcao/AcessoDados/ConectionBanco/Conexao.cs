@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AcessoDados.ConectionBanco
 {
-	public class Conexao
+	internal class Conexao
 	{
 		private static string conexao = @"Data Source=DESKTOP-GG2GURI\SQLEXPRESS;Initial Catalog=Construcao;User ID=SA;Password=Farias123.;";
 
-		public static string stringConexao
+		internal static string stringConexao
 		{
 			get { return conexao; }
 		}

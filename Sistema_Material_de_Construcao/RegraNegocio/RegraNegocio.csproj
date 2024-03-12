@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="FuncionariosRN\AlteraFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\SalvarFuncionariosRN.cs" />
+    <Compile Include="FuncionariosRN\ValidacoesFuncionarioRN\ValidaAlteraFuncionarioRN.cs" />
+    <Compile Include="FuncionariosRN\ValidacoesFuncionarioRN\ValidaFuncionarioRN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,18 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RegraNegocio.FuncionariosRN;
+using RegraNegocio.FuncionariosRN.ValidacoesFuncionarioRN;
 
 
 namespace Sistema_Material_de_Construcao
 {
 	public partial class frmFuncionarios : KryptonForm
 	{
-		SalvarFuncionariosRN SalvarFuncionarioRN;
+		ValidaFuncionarioRN SalvarFuncionarioRN;
 		public frmFuncionarios()
 		{
 			InitializeComponent();
-			this.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
 		}
 
 		private int idFuncionario = 0;
@@ -28,10 +27,10 @@ namespace Sistema_Material_de_Construcao
 		{
 			try
 			{
-				SalvarFuncionarioRN = new SalvarFuncionariosRN();
+				SalvarFuncionarioRN = new ValidaFuncionarioRN();
 				if (idFuncionario == 0)
 				{
-					SalvarFuncionarioRN.salvarFuncionarioRN(txtNome.Text, txtEndereco.Text, txtBairro.Text, txtCep.Text, txtCidade.Text, txtEmail.Text, 
+					SalvarFuncionarioRN.ValidaFuncionario(idFuncionario, txtNome.Text, txtEndereco.Text, txtBairro.Text, txtCep.Text, txtCidade.Text, txtEmail.Text, 
 						dtpNascimento.Value, txtTelefone1.Text, txtTelefone2.Text, txtRg.Text, txtCpf.Text, txtObservacoes.Text, dtpDataCadastro.Value);
 
 					MessageBox.Show("Funcionario Cadastrado Com Sucesso!");

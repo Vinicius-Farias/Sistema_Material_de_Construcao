@@ -7,11 +7,11 @@ using AcessoDados.FuncionarioBanco;
 
 namespace RegraNegocio.FuncionariosRN
 {
-	public class SalvarFuncionariosRN
+	internal class SalvarFuncionariosRN
 	{
 		private SaveFuncionariosAD SaveFuncionarioAD;
 
-		public void salvarFuncionarioRN(string nome, string endereco, string bairro, string cep, string cidade, string email, DateTime nascimento,
+		internal void salvarFuncionarioRN(string nome, string endereco, string bairro, string cep, string cidade, string email, DateTime nascimento,
 			string telefone1, string telefone2, string rg, string cpf, string observacoes, DateTime dataCadastro)
 		{
 			try
