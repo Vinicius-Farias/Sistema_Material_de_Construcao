@@ -84,7 +84,7 @@ namespace Sistema_Material_de_Construcao
 
 		}
 
-		public void ChamaListaCliente()
+		internal void ChamaListaCliente()
 		{
 			if (FrmListarCliente == null)
 			{
@@ -106,7 +106,7 @@ namespace Sistema_Material_de_Construcao
 			FrmListarCliente = null;
 		}
 
-		public void ChamaListaFuncionario()
+		internal void ChamaListaFuncionario()
 		{
 
 			if (FrmListarFuncionarios == null)
@@ -128,7 +128,7 @@ namespace Sistema_Material_de_Construcao
 			FrmListarFuncionarios = null;
 		}
 
-		public void ChamaListaProdutos()
+		internal void ChamaListaProdutos()
 		{
 			if (FrmListaProdutos == null)
 			{
@@ -150,6 +150,27 @@ namespace Sistema_Material_de_Construcao
 		private void FrmListaProdutos_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			FrmListaProdutos = null;
+		}
+
+		internal void ChamafrmFuncionario()
+		{
+			if (FrmProdutos == null)
+			{
+				FrmFuncionarios = new frmFuncionarios();
+				FrmFuncionarios.FormClosed += FrmFuncionarios_FormClosed;
+				FrmFuncionarios.MdiParent = this;
+				FrmFuncionarios.TopLevel = false;
+				FrmFuncionarios.Dock = DockStyle.Fill;
+				FrmFuncionarios.Show();
+			}
+			else
+			{
+				FrmFuncionarios.Activate();
+			}
+		}
+		private void FrmFuncionarios_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			FrmFuncionarios = null;
 		}
 
 		private void btnMenu_Click(object sender, EventArgs e)
@@ -190,24 +211,7 @@ namespace Sistema_Material_de_Construcao
 
 		private void btnFuncionario_Click(object sender, EventArgs e)
 		{
-			if (FrmProdutos == null)
-			{
-				FrmFuncionarios = new frmFuncionarios();
-				FrmFuncionarios.FormClosed += FrmFuncionarios_FormClosed;
-				FrmFuncionarios.MdiParent = this;
-				FrmFuncionarios.TopLevel = false;
-				FrmFuncionarios.Dock = DockStyle.Fill;
-				FrmFuncionarios.Show();
-			}
-			else
-			{
-				FrmFuncionarios.Activate();
-			}
-		}
-
-		private void FrmFuncionarios_FormClosed(object sender, FormClosedEventArgs e)
-		{
-			FrmFuncionarios = null;
+			ChamafrmFuncionario();
 		}
 
 		private void btnCliente_Click(object sender, EventArgs e)

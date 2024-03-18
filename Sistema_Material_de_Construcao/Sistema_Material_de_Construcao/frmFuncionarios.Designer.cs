@@ -148,6 +148,7 @@
 			this.btnExcluir.TabIndex = 26;
 			this.btnExcluir.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.perto;
 			this.btnExcluir.Values.Text = "";
+			this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
 			// 
 			// label14
 			// 
@@ -266,6 +267,7 @@
 			this.btnApagar.TabIndex = 15;
 			this.btnApagar.Values.Image = global::Sistema_Material_de_Construcao.Properties.Resources.borracha__1_;
 			this.btnApagar.Values.Text = "";
+			this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
 			// 
 			// kryptonGroup1
 			// 
@@ -716,6 +718,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "frmFuncionarios";
 			this.Text = "frmFuncionarios";
+			this.Load += new System.EventHandler(this.frmFuncionarios_Load);
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
 			this.kryptonGroup1.Panel.ResumeLayout(false);
 			this.kryptonGroup1.Panel.PerformLayout();

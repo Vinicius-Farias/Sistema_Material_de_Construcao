@@ -118,6 +118,7 @@
     <Compile Include="frmUnidades.Designer.cs">
       <DependentUpon>frmUnidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="FuncionarioIT.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCategoria.resx">

@@ -42,10 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FuncionariosRN\AlteraFuncionarioRN.cs" />
+    <Compile Include="FuncionariosRN\ExcluirFuncionarioRN.cs" />
+    <Compile Include="FuncionariosRN\ListaFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\SalvarFuncionariosRN.cs" />
     <Compile Include="FuncionariosRN\ValidacoesFuncionarioRN\ValidaAlteraFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\ValidacoesFuncionarioRN\ValidaFuncionarioRN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerificaCampos\VerificaCamposRN.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AcessoDados\AcessoDados.csproj">

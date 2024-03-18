@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AcessoDados.FuncionarioBanco.SelectFuncionario;
+using RegraNegocio.VerificaCampos;
 
 namespace RegraNegocio.FuncionariosRN.ValidacoesFuncionarioRN
 {
@@ -22,18 +23,18 @@ namespace RegraNegocio.FuncionariosRN.ValidacoesFuncionarioRN
 		{
 			try
 			{
-				ValidaTextBox(nome, "Nome");
-				ValidaTextBox(endereco, "Endereço");
-				ValidaTextBox(bairro, "Bairro");
-				ValidaTextBox(cep, "CEP");
-				ValidaTextBox(cidade, "Cidade");
-				ValidaTextBox(email, "Email");
-				ValidaTextBox(telefone1, "Telefone1");
-				ValidaTextBox(rg, "RG");
-				ValidaTextBox(cpf, "CPF");
+				VerificaCamposRN.ValidaTextBox(nome, "Nome");
+				VerificaCamposRN.ValidaTextBox(endereco, "Endereço");
+				VerificaCamposRN.ValidaTextBox(bairro, "Bairro");
+				VerificaCamposRN.ValidaTextBox(cep, "CEP");
+				VerificaCamposRN.ValidaTextBox(cidade, "Cidade");
+				VerificaCamposRN.ValidaTextBox(email, "Email");
+				VerificaCamposRN.ValidaTextBox(telefone1, "Telefone1");
+				VerificaCamposRN.ValidaTextBox(rg, "RG");
+				VerificaCamposRN.ValidaTextBox(cpf, "CPF");
 
-				ValidaDataNascimento(nascimento);
-				ValidaDataCadastro(dataCadastro);
+				VerificaCamposRN.ValidaDataNascimento(nascimento, "Nascimento");
+				VerificaCamposRN.ValidaDataCadastro(dataCadastro, "Cadastro");
 
 				if (idFuncionario > 0)
 				{
@@ -58,24 +59,6 @@ namespace RegraNegocio.FuncionariosRN.ValidacoesFuncionarioRN
 
 				throw new Exception(ex.Message);
 			}
-		}
-
-		private void ValidaTextBox(string textBox, string nome)
-		{
-			if (string.IsNullOrEmpty(textBox))
-				throw new Exception($"O campo {nome} não pode ser vazio!");
-		}
-
-		private void ValidaDataNascimento(DateTime nascimento)
-		{
-			if (nascimento.Date == DateTime.Today || nascimento.Date > DateTime.Today)
-				throw new Exception("A data de Nascimento não pode está na data atual ou maior doque ela!");
-		}
-
-		private void ValidaDataCadastro(DateTime dataCadastro)
-		{
-			if (dataCadastro.Date > DateTime.Today)
-				throw new Exception("A data de Cadastro não pode ser maior doque a data atual!");
 		}
 
 		public void ValidaRG(string rg)

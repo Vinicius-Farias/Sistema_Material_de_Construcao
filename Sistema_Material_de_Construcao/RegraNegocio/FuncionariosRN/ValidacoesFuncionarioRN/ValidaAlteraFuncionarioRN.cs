@@ -22,12 +22,12 @@ namespace RegraNegocio.FuncionariosRN.ValidacoesFuncionarioRN
 				dadosTabela = new DataTable();
 				dadosTabela = PesquisarIDFuncionario.PesquisarIDFuncionario(idFuncionario);
 
-				if (dadosTabela.Rows[0]["Rg_Funcionario"] != rg)
+				if (dadosTabela.Rows[0]["Rg_Funcionario"].ToString() != rg)
 				{
 					ValidaFuncionario = new ValidaFuncionarioRN();
 					ValidaFuncionario.ValidaRG(rg);
 				}
-				else if (dadosTabela.Rows[0]["Cpf_Funcionario"] != cpf)
+				else if (dadosTabela.Rows[0]["Cpf_Funcionario"].ToString() != cpf)
 				{
 					ValidaFuncionario = new ValidaFuncionarioRN();
 					ValidaFuncionario.ValidaCPF(cpf);

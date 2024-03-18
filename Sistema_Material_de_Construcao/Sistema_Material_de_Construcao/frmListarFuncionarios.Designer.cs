@@ -28,6 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -38,6 +42,8 @@
 			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dgvFuncionario = new System.Windows.Forms.DataGridView();
+			this.rbNome = new System.Windows.Forms.RadioButton();
+			this.rbCPF = new System.Windows.Forms.RadioButton();
 			this.Id_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nome_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Endereco_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,8 +60,6 @@
 			this.Data_Cadastro_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
-			this.rbNome = new System.Windows.Forms.RadioButton();
-			this.rbCPF = new System.Windows.Forms.RadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
@@ -329,6 +333,35 @@
 			this.dgvFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvFuncionario.Size = new System.Drawing.Size(1140, 446);
 			this.dgvFuncionario.TabIndex = 6;
+			this.dgvFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFuncionario_CellContentClick);
+			// 
+			// rbNome
+			// 
+			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbNome.AutoSize = true;
+			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.rbNome.Location = new System.Drawing.Point(607, 88);
+			this.rbNome.Name = "rbNome";
+			this.rbNome.Size = new System.Drawing.Size(66, 21);
+			this.rbNome.TabIndex = 1;
+			this.rbNome.TabStop = true;
+			this.rbNome.Text = "Nome";
+			this.rbNome.UseVisualStyleBackColor = true;
+			// 
+			// rbCPF
+			// 
+			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbCPF.AutoSize = true;
+			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.rbCPF.Location = new System.Drawing.Point(693, 88);
+			this.rbCPF.Name = "rbCPF";
+			this.rbCPF.Size = new System.Drawing.Size(52, 21);
+			this.rbCPF.TabIndex = 2;
+			this.rbCPF.TabStop = true;
+			this.rbCPF.Text = "CPF";
+			this.rbCPF.UseVisualStyleBackColor = true;
 			// 
 			// Id_Funcionario
 			// 
@@ -364,6 +397,9 @@
 			// Cep_Funcionario
 			// 
 			this.Cep_Funcionario.DataPropertyName = "Cep_Funcionario";
+			dataGridViewCellStyle1.Format = "99999-99";
+			dataGridViewCellStyle1.NullValue = null;
+			this.Cep_Funcionario.DefaultCellStyle = dataGridViewCellStyle1;
 			this.Cep_Funcionario.HeaderText = "CEP";
 			this.Cep_Funcionario.Name = "Cep_Funcionario";
 			this.Cep_Funcionario.ReadOnly = true;
@@ -387,6 +423,9 @@
 			// Nascimento_Funcionario
 			// 
 			this.Nascimento_Funcionario.DataPropertyName = "Nascimento_Funcionario";
+			dataGridViewCellStyle2.Format = "d";
+			dataGridViewCellStyle2.NullValue = null;
+			this.Nascimento_Funcionario.DefaultCellStyle = dataGridViewCellStyle2;
 			this.Nascimento_Funcionario.HeaderText = "Nascimento";
 			this.Nascimento_Funcionario.Name = "Nascimento_Funcionario";
 			this.Nascimento_Funcionario.ReadOnly = true;
@@ -419,6 +458,9 @@
 			// Cpf_Funcionario
 			// 
 			this.Cpf_Funcionario.DataPropertyName = "Cpf_Funcionario";
+			dataGridViewCellStyle3.Format = "999,999,999-99";
+			dataGridViewCellStyle3.NullValue = null;
+			this.Cpf_Funcionario.DefaultCellStyle = dataGridViewCellStyle3;
 			this.Cpf_Funcionario.HeaderText = "CPF";
 			this.Cpf_Funcionario.Name = "Cpf_Funcionario";
 			this.Cpf_Funcionario.ReadOnly = true;
@@ -434,6 +476,9 @@
 			// Data_Cadastro_Funcionario
 			// 
 			this.Data_Cadastro_Funcionario.DataPropertyName = "Data_Cadastro_Funcionario";
+			dataGridViewCellStyle4.Format = "d";
+			dataGridViewCellStyle4.NullValue = null;
+			this.Data_Cadastro_Funcionario.DefaultCellStyle = dataGridViewCellStyle4;
 			this.Data_Cadastro_Funcionario.HeaderText = "Data Cadastro";
 			this.Data_Cadastro_Funcionario.Name = "Data_Cadastro_Funcionario";
 			this.Data_Cadastro_Funcionario.ReadOnly = true;
@@ -454,34 +499,6 @@
 			this.btnExcluir.ReadOnly = true;
 			this.btnExcluir.Width = 30;
 			// 
-			// rbNome
-			// 
-			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbNome.AutoSize = true;
-			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.rbNome.Location = new System.Drawing.Point(607, 88);
-			this.rbNome.Name = "rbNome";
-			this.rbNome.Size = new System.Drawing.Size(66, 21);
-			this.rbNome.TabIndex = 1;
-			this.rbNome.TabStop = true;
-			this.rbNome.Text = "Nome";
-			this.rbNome.UseVisualStyleBackColor = true;
-			// 
-			// rbCPF
-			// 
-			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbCPF.AutoSize = true;
-			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.rbCPF.Location = new System.Drawing.Point(693, 88);
-			this.rbCPF.Name = "rbCPF";
-			this.rbCPF.Size = new System.Drawing.Size(52, 21);
-			this.rbCPF.TabIndex = 2;
-			this.rbCPF.TabStop = true;
-			this.rbCPF.Text = "CPF";
-			this.rbCPF.UseVisualStyleBackColor = true;
-			// 
 			// frmListarFuncionarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -501,6 +518,7 @@
 			this.Name = "frmListarFuncionarios";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmListarFuncionarios";
+			this.Load += new System.EventHandler(this.frmListarFuncionarios_Load);
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
 			this.kryptonGroup1.Panel.ResumeLayout(false);
 			this.kryptonGroup1.Panel.PerformLayout();
