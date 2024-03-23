@@ -121,6 +121,7 @@ namespace Sistema_Material_de_Construcao
 			else
 			{
 				FrmListarFuncionarios.Activate();
+				FrmListarFuncionarios.ListaFuncionarios();
 			}
 		}
 		private void FrmListarFuncionarios_FormClosed(object sender, FormClosedEventArgs e)
@@ -212,6 +213,7 @@ namespace Sistema_Material_de_Construcao
 		private void btnFuncionario_Click(object sender, EventArgs e)
 		{
 			ChamafrmFuncionario();
+			
 		}
 
 		private void btnCliente_Click(object sender, EventArgs e)
@@ -229,6 +231,7 @@ namespace Sistema_Material_de_Construcao
 			{
 				FrmClientes.Activate();
 			}
+			
 		}
 
 		private void FrmClientes_FormClosed(object sender, FormClosedEventArgs e)

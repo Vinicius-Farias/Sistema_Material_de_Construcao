@@ -17,13 +17,16 @@ namespace Sistema_Material_de_Construcao
 		private frmPrincipal FrmPrincipal;
 		private ListaFuncionarioRN ListaFuncionarioRN;
 		private ExcluirFuncionarioRN ExcluirFuncionarioRN;
+		private PeesquisarCpfFuncionarioRN PeesquisarCpfFuncionario;
+		private PesquisarNomeFuncionarioRN PesquisarNomeFuncionarioRN;
+		
 		public frmListarFuncionarios(frmPrincipal frmPrincipal)
 		{
 			InitializeComponent();
 			this.FrmPrincipal = frmPrincipal;
 		}
 
-		private void ListaFuncionarios()
+		internal void ListaFuncionarios()
 		{
 			try
 			{
@@ -37,9 +40,37 @@ namespace Sistema_Material_de_Construcao
 			}
 		}
 
+		private void Pesquisar()
+		{
+			try
+			{
+				if(rbCPF.Checked)
+				{
+					PeesquisarCpfFuncionario = new PeesquisarCpfFuncionarioRN();
+
+					dgvFuncionario.DataSource = PeesquisarCpfFuncionario.PesquisarCpfFuncionario(txtPesquisar.Text);
+				}
+				else if (rbNome.Checked)
+				{
+					PesquisarNomeFuncionarioRN = new PesquisarNomeFuncionarioRN();
+
+					dgvFuncionario.DataSource = PesquisarNomeFuncionarioRN.PesquisarNomeFuncionario(txtPesquisar.Text);
+				}
+				else
+				{
+					MessageBox.Show("Selecione alguma opção de pesquisa: Nome ou CPF", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
+			}
+			catch (Exception ex)
+			{
+
+				MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+
 		private void btnBusca_Click(object sender, EventArgs e)
 		{
-
+			Pesquisar();
 		}
 
 		private void btnListarProdutos_Click(object sender, EventArgs e)
@@ -100,6 +131,22 @@ namespace Sistema_Material_de_Construcao
 		private void frmListarFuncionarios_Load(object sender, EventArgs e)
 		{
 			ListaFuncionarios();
+		}
+
+		private void txtPesquisar_TextChanged(object sender, EventArgs e)
+		{
+			if (txtPesquisar.Text == "")
+			{
+				ListaFuncionarios();
+			}
+		}
+
+		private void txtPesquisar_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Enter)
+			{
+				Pesquisar();
+			}
 		}
 	}
 }

@@ -44,6 +44,8 @@
     <Compile Include="FuncionariosRN\AlteraFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\ExcluirFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\ListaFuncionarioRN.cs" />
+    <Compile Include="FuncionariosRN\PeesquisarCpfFuncionarioRN.cs" />
+    <Compile Include="FuncionariosRN\PesquisarNomeFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\SalvarFuncionariosRN.cs" />
     <Compile Include="FuncionariosRN\ValidacoesFuncionarioRN\ValidaAlteraFuncionarioRN.cs" />
     <Compile Include="FuncionariosRN\ValidacoesFuncionarioRN\ValidaFuncionarioRN.cs" />

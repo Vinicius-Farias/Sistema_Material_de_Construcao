@@ -28,22 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnListaCliente = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.btnBusca = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-			this.txtPes = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+			this.txtPesquisar = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
 			this.btnListarProdutos = new ComponentFactory.Krypton.Toolkit.KryptonButton();
 			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dgvFuncionario = new System.Windows.Forms.DataGridView();
-			this.rbNome = new System.Windows.Forms.RadioButton();
-			this.rbCPF = new System.Windows.Forms.RadioButton();
 			this.Id_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nome_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Endereco_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +58,8 @@
 			this.Data_Cadastro_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
+			this.rbNome = new System.Windows.Forms.RadioButton();
+			this.rbCPF = new System.Windows.Forms.RadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
 			this.kryptonGroup1.Panel.SuspendLayout();
@@ -214,21 +214,23 @@
 			this.btnBusca.Values.Text = "";
 			this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
 			// 
-			// txtPes
+			// txtPesquisar
 			// 
-			this.txtPes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtPes.Location = new System.Drawing.Point(767, 77);
-			this.txtPes.Name = "txtPes";
-			this.txtPes.Size = new System.Drawing.Size(345, 34);
-			this.txtPes.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
-			this.txtPes.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
-			this.txtPes.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-			this.txtPes.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+			this.txtPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtPesquisar.Location = new System.Drawing.Point(767, 77);
+			this.txtPesquisar.Name = "txtPesquisar";
+			this.txtPesquisar.Size = new System.Drawing.Size(345, 34);
+			this.txtPesquisar.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
+			this.txtPesquisar.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
+			this.txtPesquisar.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+			this.txtPesquisar.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)));
-			this.txtPes.StateCommon.Border.Rounding = 5;
-			this.txtPes.StateCommon.Border.Width = 1;
-			this.txtPes.StateCommon.Content.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-			this.txtPes.TabIndex = 0;
+			this.txtPesquisar.StateCommon.Border.Rounding = 5;
+			this.txtPesquisar.StateCommon.Border.Width = 1;
+			this.txtPesquisar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
+			this.txtPesquisar.TabIndex = 0;
+			this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
+			this.txtPesquisar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPesquisar_KeyDown);
 			// 
 			// btnListarProdutos
 			// 
@@ -335,34 +337,6 @@
 			this.dgvFuncionario.TabIndex = 6;
 			this.dgvFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFuncionario_CellContentClick);
 			// 
-			// rbNome
-			// 
-			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbNome.AutoSize = true;
-			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.rbNome.Location = new System.Drawing.Point(607, 88);
-			this.rbNome.Name = "rbNome";
-			this.rbNome.Size = new System.Drawing.Size(66, 21);
-			this.rbNome.TabIndex = 1;
-			this.rbNome.TabStop = true;
-			this.rbNome.Text = "Nome";
-			this.rbNome.UseVisualStyleBackColor = true;
-			// 
-			// rbCPF
-			// 
-			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.rbCPF.AutoSize = true;
-			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-			this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.rbCPF.Location = new System.Drawing.Point(693, 88);
-			this.rbCPF.Name = "rbCPF";
-			this.rbCPF.Size = new System.Drawing.Size(52, 21);
-			this.rbCPF.TabIndex = 2;
-			this.rbCPF.TabStop = true;
-			this.rbCPF.Text = "CPF";
-			this.rbCPF.UseVisualStyleBackColor = true;
-			// 
 			// Id_Funcionario
 			// 
 			this.Id_Funcionario.DataPropertyName = "Id_Funcionario";
@@ -397,9 +371,9 @@
 			// Cep_Funcionario
 			// 
 			this.Cep_Funcionario.DataPropertyName = "Cep_Funcionario";
-			dataGridViewCellStyle1.Format = "99999-99";
-			dataGridViewCellStyle1.NullValue = null;
-			this.Cep_Funcionario.DefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle9.Format = "99999-99";
+			dataGridViewCellStyle9.NullValue = null;
+			this.Cep_Funcionario.DefaultCellStyle = dataGridViewCellStyle9;
 			this.Cep_Funcionario.HeaderText = "CEP";
 			this.Cep_Funcionario.Name = "Cep_Funcionario";
 			this.Cep_Funcionario.ReadOnly = true;
@@ -423,9 +397,9 @@
 			// Nascimento_Funcionario
 			// 
 			this.Nascimento_Funcionario.DataPropertyName = "Nascimento_Funcionario";
-			dataGridViewCellStyle2.Format = "d";
-			dataGridViewCellStyle2.NullValue = null;
-			this.Nascimento_Funcionario.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle10.Format = "d";
+			dataGridViewCellStyle10.NullValue = null;
+			this.Nascimento_Funcionario.DefaultCellStyle = dataGridViewCellStyle10;
 			this.Nascimento_Funcionario.HeaderText = "Nascimento";
 			this.Nascimento_Funcionario.Name = "Nascimento_Funcionario";
 			this.Nascimento_Funcionario.ReadOnly = true;
@@ -458,9 +432,9 @@
 			// Cpf_Funcionario
 			// 
 			this.Cpf_Funcionario.DataPropertyName = "Cpf_Funcionario";
-			dataGridViewCellStyle3.Format = "999,999,999-99";
-			dataGridViewCellStyle3.NullValue = null;
-			this.Cpf_Funcionario.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle11.Format = "999,999,999-99";
+			dataGridViewCellStyle11.NullValue = null;
+			this.Cpf_Funcionario.DefaultCellStyle = dataGridViewCellStyle11;
 			this.Cpf_Funcionario.HeaderText = "CPF";
 			this.Cpf_Funcionario.Name = "Cpf_Funcionario";
 			this.Cpf_Funcionario.ReadOnly = true;
@@ -476,9 +450,9 @@
 			// Data_Cadastro_Funcionario
 			// 
 			this.Data_Cadastro_Funcionario.DataPropertyName = "Data_Cadastro_Funcionario";
-			dataGridViewCellStyle4.Format = "d";
-			dataGridViewCellStyle4.NullValue = null;
-			this.Data_Cadastro_Funcionario.DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle12.Format = "d";
+			dataGridViewCellStyle12.NullValue = null;
+			this.Data_Cadastro_Funcionario.DefaultCellStyle = dataGridViewCellStyle12;
 			this.Data_Cadastro_Funcionario.HeaderText = "Data Cadastro";
 			this.Data_Cadastro_Funcionario.Name = "Data_Cadastro_Funcionario";
 			this.Data_Cadastro_Funcionario.ReadOnly = true;
@@ -499,6 +473,34 @@
 			this.btnExcluir.ReadOnly = true;
 			this.btnExcluir.Width = 30;
 			// 
+			// rbNome
+			// 
+			this.rbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbNome.AutoSize = true;
+			this.rbNome.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.rbNome.Location = new System.Drawing.Point(607, 88);
+			this.rbNome.Name = "rbNome";
+			this.rbNome.Size = new System.Drawing.Size(66, 21);
+			this.rbNome.TabIndex = 1;
+			this.rbNome.TabStop = true;
+			this.rbNome.Text = "Nome";
+			this.rbNome.UseVisualStyleBackColor = true;
+			// 
+			// rbCPF
+			// 
+			this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.rbCPF.AutoSize = true;
+			this.rbCPF.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+			this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.rbCPF.Location = new System.Drawing.Point(693, 88);
+			this.rbCPF.Name = "rbCPF";
+			this.rbCPF.Size = new System.Drawing.Size(52, 21);
+			this.rbCPF.TabIndex = 2;
+			this.rbCPF.TabStop = true;
+			this.rbCPF.Text = "CPF";
+			this.rbCPF.UseVisualStyleBackColor = true;
+			// 
 			// frmListarFuncionarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,7 +512,7 @@
 			this.Controls.Add(this.dgvFuncionario);
 			this.Controls.Add(this.btnListarProdutos);
 			this.Controls.Add(this.btnBusca);
-			this.Controls.Add(this.txtPes);
+			this.Controls.Add(this.txtPesquisar);
 			this.Controls.Add(this.btnListaCliente);
 			this.Controls.Add(this.kryptonGroup1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -538,7 +540,7 @@
 		private System.Windows.Forms.Label label1;
 		private ComponentFactory.Krypton.Toolkit.KryptonButton btnListaCliente;
 		private ComponentFactory.Krypton.Toolkit.KryptonButton btnBusca;
-		private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPes;
+		private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPesquisar;
 		private ComponentFactory.Krypton.Toolkit.KryptonButton btnListarProdutos;
 		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
 		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
